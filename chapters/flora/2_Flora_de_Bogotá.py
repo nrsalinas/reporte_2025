@@ -27,7 +27,7 @@ st.markdown("""
 			
 Bogotá cuenta con una gran variedad de paisajes y ecosistemas de la zona alto-andina, lo cual le ha permitido albergar 3181 especies de plantas vasculares, 108 de las cuales se encuentran categorizadas como amenazadas. Aunque la red urbana de parques alberga una gran cantidad de especies exóticas, foráneas del altiplano cundiboyacense, la mayoría de las especies de plantas vasculares bogotanas crecen naturalmente en ecosistemas nativos, como lo son los páramos, los bosques altoandinos y los enclaves secos.
 
-De esta manera, la flora bogotana está dominada por plantas propias de dichos ecosistemas, como lo son las familias botánicas de las compuestas (el grupo de los frailejones, girasoles, manzanillas y caléndula), orquídeas, pastos y leguminosas (el grupo del fríjol, lenteja y arveja). Algunos géneros botánicos son igualmente importantes para la ciudad dada su gran riqueza de especies, como *Epidendrum* (orquídea), *Elaphoglossum* (helecho), *Salvia* (labiada) y *Solanum* (solanaceae).
+De esta manera, la flora bogotana está dominada por plantas propias de dichos ecosistemas, como lo son las familias botánicas de las compuestas (el grupo de los frailejones, girasoles, manzanillas y caléndula), orquídeas, pastos y leguminosas (el grupo del fríjol, lenteja y arveja). Algunos géneros botánicos son igualmente importantes para la ciudad dada su gran riqueza de especies, como *Epidendrum* (orquídea), *Elaphoglossum* (helecho), *Salvia* (labiada) y *Solanum* (solanácea).
 
 Tradicionalmente, los estudiosos de la flora han enfocado sus esfuerzos en la flora de los cerros orientales. Por esta razón, la flora de los cerros es la mejor conocida y muestreada. Este artificio de muestreo también nos permite entender por qué Monserrate y alrededores registran la mayor riqueza de especies en la ciudad. Sin embargo, en años recientes los botánicos han explorado otras zonas de Bogotá con ávido interés, cubriendo zonas tan remotas como el Parque Nacional Natural Sumapaz y las áreas rurales de las localidades Ciudad Bolívar y Usme, de gran importancia ambiental por sus extensos páramos. En este sentido, es necesario continuar con la exploración botánica de la zona rural de la ciudad, que es donde se han encontrado los vacíos de conocimiento más significativos.
 
@@ -58,9 +58,11 @@ st.markdown("""
 Las compuestas (familia Asteraceae) son el grupo más diverso de flora bogotana.			
 """)
 
-st.markdown("""#""")
-
-#t.markdown("""----""")
+st.markdown("""
+#			
+----
+#
+""")
 
 st.bar_chart(
 	gens, 
@@ -86,6 +88,25 @@ loc_spp = pd.read_csv(loc_spp_csv)
 #st.dataframe(loc_spp)
 loc = loc.merge(loc_spp, left_on="LocNombre", right_on="Localidad", how="left")
 #st.dataframe(loc)
+
+#######################
+#      pie plot
+#######################
+
+ori = {'Origen': ['Introducida', 'Nativa'], 'Porcentaje': [32, 68]}
+oripd = pd.DataFrame.from_dict(ori)
+#st.dataframe(oripd)
+pie = px.pie(oripd, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
+st.plotly_chart(pie)
+
+cat = {'Categoría': ['En Peligro Crítico', 'En Peligro', 'Vulnerable'], 'Porcentaje': [14, 46, 40]}
+catpd = pd.DataFrame.from_dict(cat)
+#st.dataframe(oripd)
+pie2 = px.pie(catpd, values='Porcentaje', names='Categoría', color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon'])
+st.plotly_chart(pie2)
+
+
+
 
 #######################
 #      plot map
