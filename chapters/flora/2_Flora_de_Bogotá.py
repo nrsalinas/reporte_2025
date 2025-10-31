@@ -9,12 +9,36 @@ fam_file = "chapters/flora/dat/Familias_mas_diversas.csv"
 gen_file = "chapters/flora/dat/Generos_mas_diversos.csv"
 
 espeletia_pic = "chapters/flora/figs/Espeletia-nicolas-torres-fernandez-sinfondo.png"
+epidendrum_pic = "chapters/flora/figs/Epidendrum_ibaguense_Pseudopanax.jpg"
 logo = "shared/figs/Negro.png"
 
-# Bar data
+###  Bar data
 
 fams = pd.read_csv(fam_file)
 gens = pd.read_csv(gen_file)
+
+###  Map data
+
+loc = gpd.read_file(loc_file, crs="EPSG:4326")
+ctr = loc.dissolve().centroid
+ctr_lon = ctr.x.item()
+ctr_lat = ctr.y.item()
+loc["LocNombre"] = loc.LocNombre.str.title()
+loc_spp = pd.read_csv(loc_spp_csv)
+#st.dataframe(loc_spp)
+loc = loc.merge(loc_spp, left_on="LocNombre", right_on="Localidad", how="left")
+#st.dataframe(loc)
+
+###  Pie data
+
+ori = {'Origen': ['Introducida', 'Nativa'], 'Porcentaje': [32, 68]}
+oripd = pd.DataFrame.from_dict(ori)
+#st.dataframe(oripd)
+
+cat = {'Categoría': ['En Peligro Crítico', 'En Peligro', 'Vulnerable'], 'Porcentaje': [14, 46, 40]}
+catpd = pd.DataFrame.from_dict(cat)
+#st.dataframe(oripd)
+
 
 
 st.markdown("""
@@ -39,73 +63,81 @@ Tradicionalmente, los estudiosos de la flora han enfocado sus esfuerzos en la fl
 
 """)
 
-st.bar_chart(
-	fams, 
-	x="Familia", 
-	y="Número de especies",
-	sort="-Número de especies",
-	color="#b65c28",
-	height=500
-)
+#######################
+#      pie plots
+#######################
 
-st.markdown("""#""")
+with st.container(border=True, horizontal_alignment='center'):
 
-left_co, cent_co,last_co = st.columns(3)
-with cent_co:
-	st.image(espeletia_pic, caption="@ Nicolás Torres Fernandez")
+	pie = px.pie(oripd, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
+	st.plotly_chart(pie)
 
-st.markdown("""
-Las compuestas (familia Asteraceae) son el grupo más diverso de flora bogotana.			
-""")
+	st.markdown("""
+	La mayoría de plantas de Bogotá son originarias de ecosistemas nativos, 
+	como páramos y bosques.
+	""")
+
+with st.container(border=True, horizontal_alignment='center'):
+
+	pie2 = px.pie(catpd, values='Porcentaje', names='Categoría', color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon'])
+	st.plotly_chart(pie2)
+
+	st.markdown("""
+	En Bogotá existen **108 especies** de plantas amenazadas.
+	""")
+
+
+###  Bar plot
+
+with st.container(border=True):
+
+	st.bar_chart(
+		fams, 
+		x="Familia", 
+		y="Número de especies",
+		sort="-Número de especies",
+		color="#b65c28",
+		height=500
+	)
+
+	#st.markdown("""#""")
+
+	left_co, right_co = st.columns(2, vertical_alignment='center')
+	
+	with left_co:
+		st.image(espeletia_pic, caption="@ Nicolás Torres Fernandez")
+
+	with right_co:
+		st.markdown("""
+			Las compuestas (el grupo de los frailejones, girasoles, manzanillas y caléndula) son el grupo más diverso de flora bogotana.			
+		""")
 
 st.markdown("""
 #			
-----
-#
 """)
 
-st.bar_chart(
-	gens, 
-	x="Género", 
-	y="Número de especies",
-	sort="-Número de especies",
-	color="#b65c28",
-	height=500
-)
+with st.container(border=True):
 
-st.markdown("""#""")
+	st.bar_chart(
+		gens, 
+		x="Género", 
+		y="Número de especies",
+		sort="-Número de especies",
+		color="#b65c28",
+		height=500
+	)
 
-#######################
-#      map data
-#######################
+	#st.markdown("""#""")
 
-loc = gpd.read_file(loc_file, crs="EPSG:4326")
-ctr = loc.dissolve().centroid
-ctr_lon = ctr.x.item()
-ctr_lat = ctr.y.item()
-loc["LocNombre"] = loc.LocNombre.str.title()
-loc_spp = pd.read_csv(loc_spp_csv)
-#st.dataframe(loc_spp)
-loc = loc.merge(loc_spp, left_on="LocNombre", right_on="Localidad", how="left")
-#st.dataframe(loc)
+	left_co, right_co = st.columns(2, vertical_alignment='center')
+	
+	with left_co:
+		st.image(epidendrum_pic, caption="@ Pseudopanax")
 
-#######################
-#      pie plot
-#######################
-
-ori = {'Origen': ['Introducida', 'Nativa'], 'Porcentaje': [32, 68]}
-oripd = pd.DataFrame.from_dict(ori)
-#st.dataframe(oripd)
-pie = px.pie(oripd, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
-st.plotly_chart(pie)
-
-cat = {'Categoría': ['En Peligro Crítico', 'En Peligro', 'Vulnerable'], 'Porcentaje': [14, 46, 40]}
-catpd = pd.DataFrame.from_dict(cat)
-#st.dataframe(oripd)
-pie2 = px.pie(catpd, values='Porcentaje', names='Categoría', color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon'])
-st.plotly_chart(pie2)
-
-
+	with right_co:
+		st.markdown("""
+			**Epidendrum** es el género de plantas vasculares más diverso en la Bogotá.			
+		""")
 
 
 #######################
