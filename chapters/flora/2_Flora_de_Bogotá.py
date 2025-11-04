@@ -109,7 +109,7 @@ with st.container(border=True):
 
 	with right_co:
 		st.markdown("""
-			Las compuestas (el grupo de los frailejones, girasoles, manzanillas y caléndula) son el grupo más diverso de flora bogotana.			
+			Las **compuestas** (el grupo de los frailejones, girasoles, manzanillas y caléndula) son el grupo más diverso de flora bogotana.			
 		""")
 
 st.markdown("""
@@ -136,7 +136,7 @@ with st.container(border=True):
 
 	with right_co:
 		st.markdown("""
-			**Epidendrum** es el género de plantas vasculares más diverso en la Bogotá.			
+			__*Epidendrum*__ es el género de plantas vasculares más diverso en la Bogotá.			
 		""")
 
 
