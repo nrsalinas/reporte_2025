@@ -177,7 +177,8 @@ with st.container(border=True, horizontal_alignment='center'):
 			center={"lat":ctr_lat, "lon":ctr_lon},
 			zoom=9.5,
 		),
-		showlegend=False
+		showlegend=False,
+		coloraxis_showscale=False
 	)
 
 	st.plotly_chart(fig, use_container_width=True)
