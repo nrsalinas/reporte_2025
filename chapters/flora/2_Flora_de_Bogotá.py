@@ -144,40 +144,43 @@ with st.container(border=True):
 #      plot map
 #######################
 
-fig = px.choropleth_map(
-	loc,
-	title='Número de especies por localidad',
-	geojson=loc.geometry,
-	locations=loc.index,
-	hover_name="Localidad",
-	hover_data={"No. especies":True},
-	color="No. especies",
-	labels={"No. especies": "Número de especies"},
-	color_continuous_scale="Reds",
-	opacity=0.7,
-	#marker_line_width=2,  # Thin line for boundaries
-	#marker_line_color='white',  # Boundary color
-	#projection="mercator"
-)
+with st.container(border=True, horizontal_alignment='center'):
 
-fig.update_geos(
-	fitbounds="geojson", 
-	visible=False,
-	bgcolor='rgba(0,0,0,0)',
-	framewidth=3,
+	fig = px.choropleth_map(
+		loc,
+		title='Número de especies por localidad',
+		geojson=loc.geometry,
+		locations=loc.index,
+		hover_name="Localidad",
+		hover_data={"No. especies":True},
+		color="No. especies",
+		labels={"No. especies": "Número de especies"},
+		color_continuous_scale="Reds",
+		opacity=0.7,
+		#marker_line_width=2,  # Thin line for boundaries
+		#marker_line_color='white',  # Boundary color
+		#projection="mercator"
 	)
 
-fig.update_layout(
-	margin={"r":0,"t":0,"l":0,"b":0},
-	paper_bgcolor='rgba(0,0,0,0)',
-    height=1300,
-	map=dict(
-		center={"lat":ctr_lat, "lon":ctr_lon},
-		zoom=9.5,
-	)
-)
+	fig.update_geos(
+		fitbounds="geojson", 
+		visible=False,
+		bgcolor='rgba(0,0,0,0)',
+		framewidth=3,
+		)
 
-st.plotly_chart(fig, use_container_width=True)
+	fig.update_layout(
+		margin={"r":0,"t":0,"l":0,"b":0},
+		paper_bgcolor='rgba(0,0,0,0)',
+		height=1300,
+		map=dict(
+			center={"lat":ctr_lat, "lon":ctr_lon},
+			zoom=9.5,
+		),
+		showlegend=False
+	)
+
+	st.plotly_chart(fig, use_container_width=True)
 
 st.markdown("""#""")
 
