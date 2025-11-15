@@ -1,21 +1,5 @@
-Localidad,Obs
-Teusaquillo,372
-Usaquen,1303
-Kennedy,289
-Puente Aranda,377
-Antonio Nariño,1
-Barrios Unidos,71
-Bosa,61
-Candelaria,168
-Chapinero,898
-Ciudad Bolivar,625
-Engativa,291
-Fontibon,99
-Los Martires,87
-Rafael Uribe Uribe,64
-San Cristobal,463
-Santa Fe,1029
-Suba,581
-Sumapaz,1141
-Tunjuelito,62
-Usme,1415
+Localidad,Zona de estudio,Número de observaciones,Número de observadores,Aves residentes,Aves migratorias,Flora,Artropodos
+Teusaquillo,Bosque Urbano Parkway,372,6,15,15,70,55
+Usaquen,Santa Bárbara Navarra y Molinos IED Nuevo Horizonte,1303,22,27,30,110,81
+Kennedy,Corredor La Magdalena ,289,4,8,12,30,50
+Puente Aranda,Bosque Urbano Ciudad Montes,377,10,38,22,60,58
