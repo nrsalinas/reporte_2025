@@ -6,6 +6,24 @@ import plotly.express as px
 
 loc_file = "shared/loca/Loca.shp"
 loc_data_csv = "chapters/ciencia_participativa_biodiversidad/dat/localidades_comms.csv"
+comm_file = "chapters/ciencia_participativa_biodiversidad/dat/comms.csv"
+recs_file = "chapters/ciencia_participativa_biodiversidad/dat/recs_group.csv"
+recs_spp_file = "chapters/ciencia_participativa_biodiversidad/dat/recs_spp.csv"
+
+colibri_pic = "chapters/ciencia_participativa_biodiversidad/figs/Colibri_coruscans_Consuelo_Sanchez.jpg"
+apis_pic = "chapters/ciencia_participativa_biodiversidad/figs/Apis_mellifera_Ivar_Leidus.jpg"
+turdus_pic = "chapters/ciencia_participativa_biodiversidad/figs/Turdus_fuscater_Dick_Daniels.jpg"
+logo = "shared/figs/Color.png"
+
+
+####    Pie data    ####
+
+comm = pd.read_csv(comm_file)
+recs = pd.read_csv(recs_file)
+
+####    Bar data    ####
+
+spp = pd.read_csv(recs_spp_file)
 
 ####    Load map data   #####
 
@@ -14,6 +32,7 @@ loc_data = pd.read_csv(loc_data_csv)
 #st.dataframe(loc_data)
 loc["Localidad"] = loc.LocNombre.str.title()
 loc = loc.merge(loc_data, on="Localidad", how="left")
+loc = loc.fillna(0)
 #st.markdown(" - ".join(loc.columns.tolist()))
 
 st.markdown("""
@@ -30,6 +49,67 @@ Esta estrategia ha permitido el registro de 3303 observaciones de fauna (aves y 
 Esta estrategia fomenta la educación ambiental, el reconocimiento de la biodiversidad urbana y la generación de datos científicos colaborativos que fortalecen la gestión ambiental de la ciudad.
 
 """)
+
+
+####    Pie plots    ####
+
+with st.container(border=True, horizontal_alignment='center'):
+
+	pie = px.pie(
+		comm, 
+		values='Número de grupos', 
+		names='Etapa', 
+		color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon']
+	)
+	st.plotly_chart(pie)
+
+	st.markdown("""
+	Existen nueve grupos de observadores en el programa en diferentes etapas de formación en ciencia participativa.
+	""")
+
+with st.container(border=True, horizontal_alignment='center'):
+
+	pie = px.pie(
+		recs,
+		values='Número de especies', 
+		names='Grupo biológico', 
+		color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon']
+	)
+	st.plotly_chart(pie)
+
+	st.markdown("""
+	Los registros de biodiversidad del programa de Ciencia Participativa se han concentrado en 3 grupos biológicos: plantas, aves y artrópodos.
+	""")
+
+####    Bar plot    ####
+
+with st.container(border=True, horizontal_alignment='center'):
+
+	st.bar_chart(
+		spp, 
+		x="Especie", 
+		y="Número de registros",
+		sort="-Número de registros",
+		color="#b65c28",
+		height=500
+	)
+
+	left_co, ctr_co, right_co = st.columns(3, vertical_alignment='center')
+	
+	with left_co:
+		st.image(colibri_pic, caption="@ Consuelo Sánchez")
+
+	with ctr_co:
+		st.image(apis_pic, caption="@ Ivar Leidus")
+
+	with right_co:
+		st.image(turdus_pic, caption="@Dick Daniels")
+
+
+	st.markdown("""
+	Entre las especies más comunmente registradas se encuentran el colibrí chillón, 
+	la abeja común y la mirla patinaranja.
+	""")
 
 
 #########    Plot map     ########
@@ -80,5 +160,15 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 
 	st.plotly_chart(fig, use_container_width=True)
+
+
+st.markdown("""#""")
+
+
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+	st.image(logo)
+
+
 
 exit()

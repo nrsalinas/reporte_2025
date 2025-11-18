@@ -10,7 +10,7 @@ gen_file = "chapters/flora/dat/Generos_mas_diversos.csv"
 
 espeletia_pic = "chapters/flora/figs/Espeletia-nicolas-torres-fernandez-sinfondo.png"
 epidendrum_pic = "chapters/flora/figs/Epidendrum_ibaguense_Pseudopanax.jpg"
-logo = "shared/figs/Negro.png"
+logo = "shared/figs/Color.png"
 
 ###  Bar data
 
