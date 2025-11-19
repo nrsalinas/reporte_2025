@@ -5,9 +5,6 @@ import plotly.express as px
 
 
 logo = "shared/figs/Color.png"
-hum_file = "chapters/plantas_urbanos/dat/Humedales/Zonas_pantanosas_humedales_IDEAM2024_v01.shp"
-xer_file = "chapters/plantas_urbanos/dat/Parques_urbanos/Parques_urbanos_23082025.shp"
-par_file = "chapters/plantas_urbanos/dat/Poligono_subxerofitico_Bog/Poligono_subxerofitico_Bog.shp"
 shape_file = "chapters/plantas_urbanos/dat/shape/ecos.shp"
 
 
@@ -154,12 +151,12 @@ with st.container(border=True, horizontal_alignment='center'):
 		opacity=0.7,
 	)
 
-	fig.update_geos(
-		fitbounds="geojson", 
-		visible=False,
-		bgcolor='rgba(0,0,0,0)',
-		framewidth=3,
-		)
+#	fig.update_geos(
+#		fitbounds="geojson", 
+#		visible=False,
+#		bgcolor='rgba(0,0,0,0)',
+#		framewidth=3,
+#		)
 
 	fig.update_layout(
 		margin={"r":0,"t":0,"l":0,"b":0},
