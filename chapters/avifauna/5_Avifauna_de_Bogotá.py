@@ -1,8 +1,11 @@
 import streamlit as st
-#import pandas as pd
-#import geopandas as gpd
-#import plotly.express as px
+import pandas as pd
+import geopandas as gpd
+import plotly.express as px
 
+####    Input files    ####
+
+loc_file = 'chapters/avifauna/dat/shp/localidad/Localidad_resgistros_aves_v01.shp'
 ard_alba = "chapters/avifauna/figs/Ardea_alba_JZC.JPG"
 pod_pod = "chapters/avifauna/figs/Podilymbus podiceps_PMS0140.jpg"
 oxy_jam = "chapters/avifauna/figs/Oxyura_jamaicensis_JZC.JPG"
@@ -19,6 +22,16 @@ con_sit = "chapters/avifauna/figs/Dubusia_taeniata_Conirostrum_sitticolor_PMS805
 and_nig = "chapters/avifauna/figs/Andigena_nigrirostris_PMS7745.jpg"
 tur_fal = "chapters/avifauna/figs/Turdus_fuscater_PMS8290.jpg"
 col_cor = "chapters/avifauna/figs/Colibri_coruscans _PMS7008.jpg"
+logo = "shared/figs/Color.png"
+
+####    Map data    ####
+
+loc = gpd.read_file(loc_file, crs="EPSG:4326")
+ctr = loc.dissolve().centroid
+ctr_lon = ctr.x.item()
+ctr_lat = ctr.y.item()
+loc["Localidad"] = loc.LocNombre.str.title()
+
 
 st.markdown("""
 			
@@ -36,12 +49,60 @@ Actualmente el Jardín Botánico de Bogotá contribuye a un proyecto sombrilla l
 
 Estos valores reflejan tanto la riqueza de avifauna como la necesidad de fortalecer las acciones de monitoreo y protección de los espacios naturales donde estas aves aún subsisten. Con este reporte queremos resaltar el valor de los ecosistemas presentes en Bogotá, no solo como hábitat de especies emblemáticas y endémicas, sino también como espacios fundamentales para el bienestar humano. Aún tenemos una muy baja representación de la avifauna en enclaves secos, bosque altoandinos, plantaciones forestales, bosques urbanos e, incluso, páramos de la ciudad. Invitamos a la ciudadanía a conocer esta biodiversidad como primer paso para diseñar y fortalecer estrategias de conservación para entender sus requerimientos de conservación y asegurar su permanencia en el tiempo. 
 
-""")
+#""")
+
+
+
+####   plot map    ####
+
+with st.container(border=True, horizontal_alignment='center'):
+
+	st.markdown("**Número de registros por localidad**  \n  \n")
+
+	fig = px.choropleth_map(
+		loc,
+		title='Número de registros por localidad',
+		geojson=loc.geometry,
+		locations=loc.index,
+		hover_name="Localidad",
+		hover_data={"Reg_aves":True},
+		color="Reg_aves",
+		labels={"Reg_aves": "Número de registros"},
+		color_continuous_scale="Reds",
+		opacity=0.7,
+		#marker_line_width=2,  # Thin line for boundaries
+		#marker_line_color='white',  # Boundary color
+		#projection="mercator"
+	)
+
+	fig.update_geos(
+		fitbounds="geojson", 
+		visible=False,
+		bgcolor='rgba(0,0,0,0)',
+		framewidth=3,
+		)
+
+	fig.update_layout(
+		margin={"r":0,"t":0,"l":0,"b":0},
+		paper_bgcolor='rgba(0,0,0,0)',
+		height=1300,
+		map=dict(
+			center={"lat":ctr_lat, "lon":ctr_lon},
+			zoom=9.5,
+		),
+		showlegend=False,
+		coloraxis_showscale=False
+	)
+
+	st.plotly_chart(fig, use_container_width=True)
+
+
+st.markdown("#\n\n\n")
 
 with st.container(border=True):
 
 	st.markdown("""
-	### Especies repreentativas de los cuerpos de agua
+	### Especies representativas de los cuerpos de agua
 	####
 	""")
 	st.image(ard_alba, caption="Garza del ganado (*Ardea alba*). @Juliana Zuluaga.")
@@ -105,6 +166,12 @@ with st.container(border=True):
 	st.image(tur_fal, caption="Mirla patinaranja (*Turdus fuscater*) . @PMS.")
 	st.markdown("---")
 	st.image(col_cor, caption="Colibri chillón (*Colibri coruscans*). @PMS.")
+
+
+
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+	st.image(logo)
 
 
 
