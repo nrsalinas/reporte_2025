@@ -5,11 +5,18 @@ import plotly.express as px
 
 
 logo = "shared/figs/Color.png"
+hum_file = "chapters/plantas_urbanos/dat/Humedales/Zonas_pantanosas_humedales_IDEAM2024_v01.shp"
+xer_file = "chapters/plantas_urbanos/dat/Parques_urbanos/Parques_urbanos_23082025.shp"
+par_file = "chapters/plantas_urbanos/dat/Poligono_subxerofitico_Bog/Poligono_subxerofitico_Bog.shp"
+shape_file = "chapters/plantas_urbanos/dat/shape/ecos.shp"
 
 
+###   Plot data   ###
 
+shape = gpd.read_file(shape_file)
+shape = shape.to_crs(4326)
 
-###  Chart data
+###  Chart data   ###
 
 encl_ori = {'Origen': ['Introducidas', 'Nativas'], 'Porcentaje': [8.5, 91.5]}
 encl_ori_pd = pd.DataFrame.from_dict(encl_ori)
@@ -22,7 +29,7 @@ parq_ori_pd = pd.DataFrame.from_dict(parq_ori)
 #st.dataframe(parq_ori_pd)
 
 end = {
-	'Ecosistema': ['Subxerofítico', 'Humedal', 'Urbano'],
+	'Ecosistema': ['Enclaves secos', 'Humedales', 'Parques urbanos'],
 	'Porcentaje': [17, 24, 63]	
 }
 end_pd = pd.DataFrame.from_dict(end)
@@ -58,29 +65,56 @@ En conjunto, este primer Reporte de Estado de la Diversidad en plantas de los ec
 
 with st.container(border=True, horizontal_alignment='center'):
 
-	pie0 = px.pie(encl_ori, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
+	pie0 = px.pie(
+		encl_ori, 
+		values='Porcentaje', 
+		names='Origen', 
+		title='Origen geográfico de las plantas de enclaves subxerofíticos',
+		color_discrete_sequence=['LightSalmon', 'DarkRed']
+	)
 	st.plotly_chart(pie0)
 
-	pie1 = px.pie(hum_ori, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
-	pie1 = pie1.update_layout(showlegend=False)
+	pie1 = px.pie(
+		hum_ori, 
+		values='Porcentaje', 
+		names='Origen', 
+		title='Origen geográfico de las plantas de humedales',
+		color_discrete_sequence=['LightSalmon', 'DarkRed']
+	)
+	#pie1 = pie1.update_layout(showlegend=False)
 	st.plotly_chart(pie1)
 
-	pie2 = px.pie(parq_ori, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
-	pie2 = pie2.update_layout(showlegend=False)
+	pie2 = px.pie(
+		parq_ori, 
+		values='Porcentaje', 
+		names='Origen', 
+		title='Origen geográfico de las plantas de parques urbanos',
+		color_discrete_sequence=['LightSalmon', 'DarkRed']
+	)
+	#pie2 = pie2.update_layout(showlegend=False)
 	st.plotly_chart(pie2)
 
 	st.markdown("""
-	La mayoría de plantas de los enclaves sub-xerofíticos son nativas.
+	La gran mayoría de plantas de los enclaves subxerofíticos son nativas, 
+	pero en los humedales y los parques urbanos este panorama cambia, dado que 
+	existe una proporción significativa de flora introducida an ambas unidades.
 	""")
 
 with st.container(border=True, horizontal_alignment='center'):
 
-	pie3 = px.pie(end, values='Porcentaje', names='Ecosistema', color_discrete_sequence=['Bisque', 'DarkRed', 'Coral'])
+	pie3 = px.pie(
+		end, 
+		values='Porcentaje', 
+		names='Ecosistema', 
+		title='Endemismo',
+		color_discrete_sequence=['Bisque', 'DarkRed', 'Coral']
+	)
 	#pie3 = pie3.update_layout(showlegend=False)
 	st.plotly_chart(pie3)
 
 	st.markdown("""
-	Se registraron varias especies endémicas de Colombia.
+	Se registraron varias especies endémicas de Colombia en los ecosistemas urbanos 
+	de Bogotá, principalmente en los parques urbanos.
 	""")
 
 with st.container(border=True, horizontal_alignment='center'):
@@ -101,6 +135,48 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 	bar0 = bar0.update_layout(height=500)
 	st.plotly_chart(bar0)
+
+
+###   plot maps   ###
+
+with st.container(border=True, horizontal_alignment='center'):
+
+	st.markdown("Localización de los principales ecosistemas urbanos de la ciudad: :blue[humedales], :green[parques urbanos] y :orange[enclaves subxerofíticos]")
+
+	fig = px.choropleth_map(
+		shape,
+		title='Ecosistemas urbanos',
+		geojson=shape.geometry,
+		locations=shape.index,
+		hover_name="Ecosistema",
+		color="Ecosistema",
+		color_discrete_sequence=['Blue', 'Green', 'OrangeRed'],
+		opacity=0.7,
+	)
+
+	fig.update_geos(
+		fitbounds="geojson", 
+		visible=False,
+		bgcolor='rgba(0,0,0,0)',
+		framewidth=3,
+		)
+
+	fig.update_layout(
+		margin={"r":0,"t":0,"l":0,"b":0},
+		paper_bgcolor='rgba(0,0,0,0)',
+		height=1300,
+		map=dict(
+			center={"lat":4.645310, "lon":-74.113101},
+			zoom=11,
+		),
+		showlegend=False,
+		coloraxis_showscale=False
+	)
+
+	st.plotly_chart(fig, use_container_width=True)
+
+st.markdown("""#""")
+
 
 left_co, cent_co,last_co = st.columns(3)
 with cent_co:
