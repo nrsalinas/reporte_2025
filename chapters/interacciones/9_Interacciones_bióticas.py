@@ -7,6 +7,7 @@ inter_all = "chapters/interacciones/dat/interacciones_todas_long.csv"
 inter_no_nat = "chapters/interacciones/dat/interacciones_no_nativas_long.csv"
 spp_nat = "chapters/interacciones/dat/spp_nativas.csv"
 spp_no_nat = "chapters/interacciones/dat/spp_no_nativas.csv"
+loc_file = "chapters/interacciones/dat/mapa/interact.shp"
 
 
 ###  Bar data
@@ -15,6 +16,13 @@ inter_all_df = pd.read_csv(inter_all)
 inter_no_nat_df = pd.read_csv(inter_no_nat)
 spp_nat_df = pd.read_csv(spp_nat)
 spp_no_nat_df = pd.read_csv(spp_no_nat)
+
+###   Map data
+
+loc = gpd.read_file(loc_file, crs="EPSG:4326")
+ctr = loc.dissolve().centroid
+ctr_lon = ctr.x.item()
+ctr_lat = ctr.y.item()
 
 st.markdown("""
 			
@@ -84,5 +92,39 @@ with st.container(border=True, horizontal_alignment='center'):
 	#bar1 = bar1.update_layout(height=500)
 	st.plotly_chart(bar1)
 
+with st.container(border=True, horizontal_alignment='center'):
+
+	fig = px.choropleth_map(
+		loc,
+		title='Interacciones',
+		geojson=loc.geometry,
+		locations=loc.index,
+		hover_name="Localidad",
+		hover_data={"Clases":True, "Registros": True},
+		color="Registros",
+		labels={
+			"Clases":"Clases de interacciones",
+			"Registros": "Número de registros"
+		},
+		color_continuous_scale="Reds",
+		opacity=0.7,
+		#marker_line_width=2,  # Thin line for boundaries
+		#marker_line_color='white',  # Boundary color
+		#projection="mercator"
+	)
+
+	fig.update_layout(
+		margin={"r":0,"t":0,"l":0,"b":0},
+		paper_bgcolor='rgba(0,0,0,0)',
+		height=1300,
+		map=dict(
+			center={"lat":ctr_lat, "lon":ctr_lon},
+			zoom=9.5,
+		),
+		showlegend=False,
+		coloraxis_showscale=False
+	)
+
+	st.plotly_chart(fig, use_container_width=True)
 
 exit(0)
