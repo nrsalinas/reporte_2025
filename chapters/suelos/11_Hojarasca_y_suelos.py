@@ -35,7 +35,7 @@ with st.container(border=True, horizontal_alignment='center'):
 
 	bar = px.bar(
 		hojar, 
-		y="Densidad (t ha-1)", 
+		y="Densidad (t ha⁻¹)", 
 		x="Sitio",
 		color="Componente de hojarasca",
 		barmode='group',
@@ -50,10 +50,9 @@ with st.container(border=True, horizontal_alignment='center'):
 
 	bar1 = px.bar(
 		flujos, 
-		x="Flujo CO2 (microl m2 s-1)", 
+		x="Flujo CO₂ (microl m² s⁻¹)", 
 		y="Sitio",
-		#color="Flujo CO2 (microl m2 s-1)",
-		title='Flujo de CO2 en el suelo',
+		title='Flujo de CO₂ en el suelo',
 		color_discrete_sequence=['DarkRed']
 	)
 
@@ -61,6 +60,8 @@ with st.container(border=True, horizontal_alignment='center'):
 	st.plotly_chart(bar1)
 
 with st.container(border=True, horizontal_alignment='center'):
+
+	st.markdown("""**Principales variables fisico-químicas de los suelos estudiados**""")
 
 	st.dataframe(compos)
 
