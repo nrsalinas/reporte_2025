@@ -26,7 +26,8 @@ logo = "shared/figs/Color.png"
 
 ####    Map data    ####
 
-loc = gpd.read_file(loc_file, crs="EPSG:4326")
+loc = gpd.read_file(loc_file)
+loc = loc.to_crs(4326)
 ctr = loc.dissolve().centroid
 ctr_lon = ctr.x.item()
 ctr_lat = ctr.y.item()

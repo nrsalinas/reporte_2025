@@ -19,7 +19,8 @@ spp_no_nat_df = pd.read_csv(spp_no_nat)
 
 ###   Map data
 
-loc = gpd.read_file(loc_file, crs="EPSG:4326")
+loc = gpd.read_file(loc_file)
+loc = loc.to_crs(4326)
 ctr = loc.dissolve().centroid
 ctr_lon = ctr.x.item()
 ctr_lat = ctr.y.item()
