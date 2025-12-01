@@ -137,7 +137,7 @@ with st.container(border=True):
 
 	with right_co:
 		st.markdown("""
-			__*Epidendrum*__ es el género de plantas vasculares más diverso en la Bogotá.			
+			__*Epidendrum*__ es el género de plantas vasculares más diverso en Bogotá.			
 		""")
 
 
