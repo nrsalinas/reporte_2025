@@ -27,7 +27,8 @@ spp = pd.read_csv(recs_spp_file)
 
 ####    Load map data   #####
 
-loc = gpd.read_file(loc_file, crs="EPSG:4326")
+loc = gpd.read_file(loc_file)
+loc = loc.to_crs(4326)
 loc_data = pd.read_csv(loc_data_csv)		
 #st.dataframe(loc_data)
 loc["Localidad"] = loc.LocNombre.str.title()
