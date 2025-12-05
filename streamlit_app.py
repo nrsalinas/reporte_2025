@@ -10,6 +10,7 @@ pg = st.navigation(
 		st.Page("chapters/avifauna/5_Avifauna_de_Bogotá.py", url_path="aves"),
 		st.Page("chapters/ciencia_participativa_biodiversidad/8_Biodiversidad_y_ciencia_participativa.py", url_path="biodiv_ciencia_part"),
 		st.Page("chapters/interacciones/9_Interacciones_bióticas.py", url_path="interacciones"),
+		st.Page("chapters/ciencia_participativa_interacciones/10_Interacciones_y_ciencia_participativa.py", url_path="inter_ciencia_part"),
 		st.Page("chapters/suelos/11_Hojarasca_y_suelos.py", url_path="hojarasca")
 	]
 )

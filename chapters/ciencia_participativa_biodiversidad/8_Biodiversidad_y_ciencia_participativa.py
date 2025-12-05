@@ -40,7 +40,7 @@ st.markdown("""
 			
 # Biodiversidad y ciencia participativa
 			
-### Ángela Montoya
+### Angela Montoya
 
 #### Jardín Botánico de Bogotá, eje Conservación _in situ_
 			
