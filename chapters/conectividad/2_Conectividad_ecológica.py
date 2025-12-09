@@ -4,6 +4,7 @@ import geopandas as gpd
 import plotly.express as px
 
 eep_file = "chapters/conectividad/dat/shape/priority_eep_1000.shp"
+logo = "shared/figs/Color.png"
 
 ###   Map data
 
@@ -166,3 +167,11 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 
 	st.plotly_chart(fig, use_container_width=True)
+
+st.markdown("""#""")
+
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+	st.image(logo)
+
+exit()

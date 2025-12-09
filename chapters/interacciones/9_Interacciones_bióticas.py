@@ -8,6 +8,7 @@ inter_no_nat = "chapters/interacciones/dat/interacciones_no_nativas_long.csv"
 spp_nat = "chapters/interacciones/dat/spp_nativas.csv"
 spp_no_nat = "chapters/interacciones/dat/spp_no_nativas.csv"
 loc_file = "chapters/interacciones/dat/mapa/interact.shp"
+logo = "shared/figs/Color.png"
 
 
 ###  Bar data
@@ -129,5 +130,12 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 
 	st.plotly_chart(fig, use_container_width=True)
+
+st.markdown("""#""")
+
+left_co, cent_co,last_co = st.columns(3)
+with cent_co:
+	st.image(logo)
+
 
 exit(0)
