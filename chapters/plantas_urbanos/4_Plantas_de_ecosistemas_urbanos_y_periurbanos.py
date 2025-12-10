@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import plotly.express as px
-
+from chapters.plantas_urbanos import text
 
 logo = "shared/figs/Color.png"
 shape_file = "chapters/plantas_urbanos/dat/shape/ecos.shp"
@@ -41,24 +41,10 @@ iucn = {
 }
 iucn_pd = pd.DataFrame.from_dict(iucn)
 
-
-st.markdown("""
-			
-# Plantas de los ecosistemas urbanos y peri-urbanos de Bogotá
-			
-### Esther Velásquez, Lina Corrales y José Guerrero
-
-#### Jardín Botánico de Bogotá, eje Conservación _in situ_
-			
-La documentación de la flora de Bogotá ha sido una tarea continua desde el siglo XVIII, cuando la real expedición botánica —liderada por José Celestino Mutis— inició el registro de la riqueza vegetal del territorio. Más de dos siglos después, y pese a los numerosos esfuerzos posteriores de investigación, aún persisten vacíos en el conocimiento sobre la composición y el estado de conservación de la flora en el Distrito Capital. Esta investigación busca aportar a la consolidación de esa información mediante la integración de tres estudios desarrollados en 2025 por el eje Conservación _in situ_ del Jardín Botánico de Bogotá: la flora de enclaves subxerofíticos andinos, la flora de humedales urbanos y la flora de parques urbanos. 
-			
-El objetivo de este trabajo conjunto fue caracterizar la diversidad vegetal de tres tipos de ecosistemas representativos de la matriz ecológica urbana y periurbana, fortaleciendo la línea base de flora de Bogotá y evidenciando su papel en la conectividad ecológica y la provisión de servicios ecosistémicos. La consolidación de estas investigaciones permitió generar un panorama unificado de la vegetación bogotana, facilitando el análisis comparativo entre ecosistemas y promoviendo la gestión integrada para su conservación.
-			
-En los enclaves secos andinos se evidenció una flora predominantemente nativa, rica en especies adaptadas a condiciones de aridez, con rasgos morfológicos como suculencia, espinas y crecimiento herbáceo. Estos ecosistemas conservan un conjunto importante de especies endémicas y constituyen refugios azonales de biodiversidad únicos en el paisaje periurbano de Bogotá. Los humedales urbanos, por otro lado, son de composición mixta, donde conviven especies locales y exóticas, reflejando la influencia antrópica sobre estos ecosistemas. A pesar de ello, mantienen un papel esencial en la conectividad ecológica, la regulación hídrica y la provisión de hábitats para la fauna silvestre. En los parques urbanos, la vegetación representa una transición entre lo nativo y las especies foráneas, con una alta representatividad de especies endémicas, destacando su función como corredores ecológicos y espacios de interacción entre la ciudadanía y la biodiversidad. Estos tres ecosistemas albergan numerosas especies en diferentes categorías de amenaza, lo que resalta la necesidad de fortalecer las acciones de restauración ecológica, manejo de la flora nativa y conservación de los ecosistemas.
-
-En conjunto, este primer Reporte de Estado de la Diversidad en plantas de los ecosistemas urbanos y periurbanos de Bogotá evidencia la alta riqueza florística de la ciudad y la necesidad de continuar unificando datos y esfuerzos interinstitucionales para cerrar vacíos de información, promover la investigación aplicada y consolidar una gestión urbana más resiliente frente al cambio climático. 
-			
-""")
+md = f'# {text.title}\n\n### {text.author}\n\n'
+md += '#### Jardín Botánico de Bogotá, eje Conservación _in situ_'
+md += f'{text.main}\n\n#\n\n'
+st.markdown(md)
 
 with st.container(border=True, horizontal_alignment='center'):
 
