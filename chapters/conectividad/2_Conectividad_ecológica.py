@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import plotly.express as px
+from chapters.conectividad import text
 
 eep_file = "chapters/conectividad/dat/shape/priority_eep_1000.shp"
 logo = "shared/figs/Color.png"
@@ -47,31 +48,10 @@ fl_eep_parks = {
 }
 fl_eep_parks_pd = pd.DataFrame.from_dict(fl_eep_parks)
 
-
-st.markdown("""
-			
-# Conectividad de las áreas verdes de Bogotá
-			
-### Kristian Rubiano
-
-#### Jardín Botánico de Bogotá, eje Conservación _in situ_
-			
-Bogotá se ubica en una de las regiones más biodiversas del planeta, pero su rápido crecimiento urbano ha fragmentado y aislado muchas de sus áreas verdes. Para mitigar estos procesos que impactan negativamente a la biodiversidad, se creó la Estructura Ecológica Principal de Bogotá: una red de cerros, reservas, humedales, rondas de río, parques urbanos y otras áreas verdes, diseñada para conservar la naturaleza y los servicios que esta le presta a ciudad y a la región. Sin embargo, hasta ahora no se sabía con claridad qué tan bien conectados están estos espacios entre sí para proteger la biodiversidad de forma efectiva. 
-			
-Para ampliar nuestro conocimiento al respecto, usamos mapas detallados de la Estructura Ecológica Principal para analizar cómo están distribuidas estas áreas verdes y qué tan fácil sería para animales como aves, insectos o pequeños mamíferos desplazarse entre ellas, teniendo en cuenta las distancias entre los distintos espacios. Esto también nos permitió identificar zonas de la región que podrían ser priorizadas para aumentar la conectividad entre áreas verdes.
-			
-Estos análisis indicaron que cerca del 93% del área de la Estructura Ecológica Principal forma un gran “bloque” continuo de hábitat, lo que es una buena noticia para muchas especies. No obstante, dentro de la ciudad existen zonas, sobre todo altamente urbanizadas y localizadas en el borde sur, donde la Estructura Ecológica Principal casi no está presente y, por lo tanto, la conectividad es muy baja o nula. Estas zonas aparecen como "vacíos" de conectividad y deberían ser prioridad para aumentar y mejorar la presencia y calidad de las áreas verdes.
-			
-Los parques urbanos de menor tamaño agregan poca área verde adicional al total de la ciudad, pero cumplen un papel clave como pequeños puentes entre las grandes áreas verdes. Disminuyen las distancias entre áreas, aumentan la proximidad entre ellas y refuerzan la posibilidad de movimiento de la fauna a través de la ciudad. Es decir, aunque no sean grandes reservas de hábitat, ayudan a conectar las que ya existen y a llevar la naturaleza a barrios donde hoy casi no hay.
-			
-En conjunto, los resultados muestran que la Estructura Ecológica Principal ofrece una base sólida de hábitat, mientras que los parques urbanos de menor tamaño ayudan a tejer la red de conexiones entre esos núcleos principales. Esto sugiere que, si se diseñan y manejan con criterios ecológicos (tipo de vegetación, función, tamaño y ubicación), estos parques pueden convertirse en aliados estratégicos para conservar la biodiversidad y mejorar la calidad de vida en Bogotá. Por ello, deberían ser considerados de manera explícita en la planificación y en el seguimiento de cómo se conectan las áreas verdes en la ciudad.
-#
-			
-# 
-
-			
-
-""")
+md = f'# {text.title}\n\n### {text.author}\n\n'
+md += '#### Jardín Botánico de Bogotá, eje Conservación _in situ_'
+md += f'{text.main}\n\n#\n\n'
+st.markdown(md)
 
 #######################
 #      plot pies
