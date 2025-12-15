@@ -68,7 +68,8 @@ with st.container(border=True, horizontal_alignment='center'):
 		x="Registros",
 		color="Interacción",
 		title='Especies no nativas con mayor número de registros',
-		#color_discrete_sequence=['Bisque', 'DarkRed', 'Coral']
+		#color_discrete_sequence=['Bisque', 'DarkRed', 'Coral'],
+		color_discrete_sequence=["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"],
 	)
 
 	#bar3 = bar3.update_layout(height=500)
@@ -80,7 +81,8 @@ with st.container(border=True, horizontal_alignment='center'):
 		x="Registros",
 		color="Interacción",
 		title='Especies nativas con mayor número de registros',
-		#color_discrete_sequence=['Bisque', 'DarkRed', 'Coral']
+		#color_discrete_sequence=['Bisque', 'DarkRed', 'Coral'],
+		color_discrete_sequence=["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"],
 	)
 
 	#bar2 = bar2.update_layout(height=500)

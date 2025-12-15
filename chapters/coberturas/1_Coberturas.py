@@ -41,17 +41,18 @@ with st.container(border=True, horizontal_alignment='center'):
 		color="Eco1",
 		labels={"Eco1": "Ecosistema original"},
 		color_discrete_sequence=[
-			'Olive', #Arbustal
-			'Green', #Bosque                     
+			'OliveDrab', #Arbustal
+			'DarkOliveGreen', #Bosque                     
 			'Black', #Complejos Rocosos          
 			'DarkCyan', #Cuerpo de Agua Artificial  
 			'DarkSeaGreen', #Herbazal                   
-			'Blue', #Laguna                     
-			'SaddleBrown', #Paramo                     
+			'Blue', #Laguna
+			#'SaddleBrown', #Paramo                     
+			'DarkKhaki', #Paramo                     
 			'Teal', #Rio                        
-			'OrangeRed', #Subxerofitia               
+			'SandyBrown', #Subxerofitia               
 			'Gray', #Territorio Artificializado 
-			'LightSeaGreen', #Turbera                    
+			'YellowGreen', #Turbera                    
 			'DodgerBlue', #Zona Pantanosa 
 		],
 		opacity=0.7,

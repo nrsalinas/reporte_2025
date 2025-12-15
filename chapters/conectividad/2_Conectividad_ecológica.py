@@ -64,7 +64,8 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Área (ha)', 
 		names='Connectividad', 
 		title='Conectividad de la estructura ecológica principal',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		#color_discrete_sequence=['LightSalmon', 'DarkRed'],
+		color_discrete_sequence=['#92a311', '#d9c663'],
 	)
 	st.plotly_chart(pie0)
 

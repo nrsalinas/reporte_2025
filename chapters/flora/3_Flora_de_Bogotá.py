@@ -53,7 +53,10 @@ st.markdown(md)
 
 with st.container(border=True, horizontal_alignment='center'):
 
-	pie = px.pie(oripd, values='Porcentaje', names='Origen', color_discrete_sequence=['LightSalmon', 'DarkRed'])
+	pie = px.pie(oripd, values='Porcentaje', names='Origen', 
+		#color_discrete_sequence=['LightSalmon', 'DarkRed'],
+		color_discrete_sequence=['#92a311', '#d9c663'],
+		)
 	st.plotly_chart(pie)
 
 	st.markdown("""
@@ -63,7 +66,10 @@ with st.container(border=True, horizontal_alignment='center'):
 
 with st.container(border=True, horizontal_alignment='center'):
 
-	pie2 = px.pie(catpd, values='Porcentaje', names='Categoría', color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon'])
+	pie2 = px.pie(catpd, values='Porcentaje', names='Categoría', 
+		#color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon']
+		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
+		)
 	st.plotly_chart(pie2)
 
 	st.markdown("""
@@ -80,7 +86,8 @@ with st.container(border=True):
 		x="Familia", 
 		y="Número de especies",
 		sort="-Número de especies",
-		color="#b65c28",
+		color="#548d10",
+		#color="#b65c28",
 		height=500
 	)
 
@@ -107,7 +114,8 @@ with st.container(border=True):
 		x="Género", 
 		y="Número de especies",
 		sort="-Número de especies",
-		color="#b65c28",
+		color="#99a613",
+		#color="#b65c28",
 		height=500
 	)
 
@@ -139,7 +147,8 @@ with st.container(border=True, horizontal_alignment='center'):
 		hover_data={"No. especies":True},
 		color="No. especies",
 		labels={"No. especies": "Número de especies"},
-		color_continuous_scale="Reds",
+		#color_continuous_scale="Reds",
+		color_continuous_scale="Speed",
 		opacity=0.7,
 		#marker_line_width=2,  # Thin line for boundaries
 		#marker_line_color='white',  # Boundary color
