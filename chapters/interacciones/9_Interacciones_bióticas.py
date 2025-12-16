@@ -41,7 +41,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		x="Registros",
 		color="Potencial invasor",
 		title='Interacciones de plantas no nativas',
-		color_discrete_sequence=['Bisque', 'DarkRed', 'Coral']
+		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
 
 	#bar1 = bar1.update_layout(height=500)
@@ -53,7 +53,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		x="Registros",
 		color="Potencial invasor",
 		title='Interacciones de plantas nativas',
-		color_discrete_sequence=['Bisque', 'DarkRed', 'Coral']
+		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
 
 	#bar0 = bar0.update_layout(height=500)
@@ -105,7 +105,7 @@ with st.container(border=True, horizontal_alignment='center'):
 			"Clases":"Clases de interacciones",
 			"Registros": "Número de registros"
 		},
-		color_continuous_scale="Reds",
+		color_continuous_scale="Speed",
 		opacity=0.7,
 		#marker_line_width=2,  # Thin line for boundaries
 		#marker_line_color='white',  # Boundary color

@@ -54,7 +54,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		hover_data={"Reg_aves":True},
 		color="Reg_aves",
 		labels={"Reg_aves": "Número de registros"},
-		color_continuous_scale="Reds",
+		color_continuous_scale="Speed",
 		opacity=0.7,
 		#marker_line_width=2,  # Thin line for boundaries
 		#marker_line_color='white',  # Boundary color

@@ -34,7 +34,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		color="Componente de hojarasca",
 		barmode='group',
 		title='Composición de la hojarasca',
-		color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon', 'Bisque']
+		color_discrete_sequence=["#18351f", '#36811c','#859f0c','#e0cd72']
 	)
 
 	#bar = bar.update_layout(height=500)
@@ -47,7 +47,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		x="Flujo CO₂ (microl m² s⁻¹)", 
 		y="Sitio",
 		title='Flujo de CO₂ en el suelo',
-		color_discrete_sequence=['DarkRed']
+		color_discrete_sequence=["#99a613"]
 	)
 
 	#bar1 = bar1.update_layout(height=500)
@@ -71,7 +71,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		hover_name = 'Sitio',
 		hover_data={'Size':False, 'Latitud':False, 'Longitud':False},
 		#color_continuous_scale=px.colors.cyclical.IceFire, 
-		color_discrete_sequence=['OrangeRed'],
+		color_discrete_sequence=["#548d10"],
 		zoom=10,
 		size="Size",
 		height=800

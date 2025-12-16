@@ -47,7 +47,6 @@ with st.container(border=True, horizontal_alignment='center'):
 			'DarkCyan', #Cuerpo de Agua Artificial  
 			'DarkSeaGreen', #Herbazal                   
 			'Blue', #Laguna
-			#'SaddleBrown', #Paramo                     
 			'DarkKhaki', #Paramo                     
 			'Teal', #Rio                        
 			'SandyBrown', #Subxerofitia               
@@ -94,19 +93,19 @@ with st.container(border=True, horizontal_alignment='center'):
 		labels={"ecos_sinte": "Ecosistema actual"},
 		color_discrete_sequence=[
 			'LightSteelBlue', # Agroecosistema            
-			'Olive', # Arbustal                  
-			'Green', # Bosque                    
+			'OliveDrab', # Arbustal                  
+			'DarkOliveGreen', # Bosque                    
 			'DarkSeaGreen', # Bosque Fragmentado        
 			'Black', # Complejos Rocosos         
 			'DarkCyan', # Cuerpo de Agua Artificial 
 			'DarkSeaGreen', # Herbazal                  
 			'Blue', # Laguna                    
-			'SaddleBrown', # Paramo                    
+			'DarkKhaki', # Paramo                    
 			'Teal', # Rio                       
-			'OrangeRed', # Subxerofitia              
+			'SandyBrown', # Subxerofitia              
 			'Gray', # Territorio Artificializado
 			'LightSlateGrey', # Transicional Transformado 
-			'LightSeaGreen', # Turbera                   
+			'YellowGreen', # Turbera                   
 			'LightGreen', # Vegetacion Secundaria     
 			'DodgerBlue', # Zona Pantanosa            
 		],

@@ -54,7 +54,6 @@ st.markdown(md)
 with st.container(border=True, horizontal_alignment='center'):
 
 	pie = px.pie(oripd, values='Porcentaje', names='Origen', 
-		#color_discrete_sequence=['LightSalmon', 'DarkRed'],
 		color_discrete_sequence=['#92a311', '#d9c663'],
 		)
 	st.plotly_chart(pie)
@@ -67,7 +66,6 @@ with st.container(border=True, horizontal_alignment='center'):
 with st.container(border=True, horizontal_alignment='center'):
 
 	pie2 = px.pie(catpd, values='Porcentaje', names='Categoría', 
-		#color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon']
 		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 		)
 	st.plotly_chart(pie2)

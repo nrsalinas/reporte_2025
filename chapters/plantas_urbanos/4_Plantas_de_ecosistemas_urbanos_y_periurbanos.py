@@ -53,7 +53,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Origen', 
 		title='Origen geográfico de las plantas de enclaves subxerofíticos',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie0)
 
@@ -62,7 +62,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Origen', 
 		title='Origen geográfico de las plantas de humedales',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	#pie1 = pie1.update_layout(showlegend=False)
 	st.plotly_chart(pie1)
@@ -72,7 +72,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Origen', 
 		title='Origen geográfico de las plantas de parques urbanos',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	#pie2 = pie2.update_layout(showlegend=False)
 	st.plotly_chart(pie2)
@@ -90,7 +90,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Ecosistema', 
 		title='Endemismo',
-		color_discrete_sequence=['Bisque', 'DarkRed', 'Coral']
+		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
 	#pie3 = pie3.update_layout(showlegend=False)
 	st.plotly_chart(pie3)
@@ -108,13 +108,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		x='Ecosistema', 
 		y = myyy,
 		title='Plantas amenazadas',
-		color_discrete_sequence=[
-			'FireBrick',
-			'IndianRed',
-			'DarkSalmon',
-			'SeaGreen',
-			'MediumTurquoise'
-		]
+		color_discrete_sequence=["#18351f", "#1f7425", "#809d0b", "#b1af2c", "#f3e9ab"]
 	)
 	bar0 = bar0.update_layout(height=500)
 	st.plotly_chart(bar0)
@@ -133,7 +127,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		locations=shape.index,
 		hover_name="Ecosistema",
 		color="Ecosistema",
-		color_discrete_sequence=['Blue', 'Green', 'OrangeRed'],
+		color_discrete_sequence=['DodgerBlue', 'DarkOliveGreen', 'SandyBrown'],
 		opacity=0.7,
 	)
 

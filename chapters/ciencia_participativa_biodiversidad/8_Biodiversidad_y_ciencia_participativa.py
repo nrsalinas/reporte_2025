@@ -50,7 +50,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		comm, 
 		values='Número de grupos', 
 		names='Etapa', 
-		color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon']
+		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
 	st.plotly_chart(pie)
 
@@ -64,7 +64,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		recs,
 		values='Número de especies', 
 		names='Grupo biológico', 
-		color_discrete_sequence=['OrangeRed', 'DarkRed', 'LightSalmon']
+		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
 	st.plotly_chart(pie)
 
@@ -81,7 +81,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		x="Especie", 
 		y="Número de registros",
 		sort="-Número de registros",
-		color="#b65c28",
+		color="#548d10",
 		height=500
 	)
 
@@ -124,7 +124,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		},
 		color="Número de observaciones",
 		#labels={"No. especies": "Número de especies"},
-		color_continuous_scale="Reds",
+		color_continuous_scale="Speed",
 		opacity=0.7,
 		#marker_line_width=2,  # Thin line for boundaries
 		#marker_line_color='white',  # Boundary color

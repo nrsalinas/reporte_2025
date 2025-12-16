@@ -26,7 +26,12 @@ with st.container(border=True, horizontal_alignment='center'):
 	pie = px.pie(
 		res, 
 		values='Reportes', 
-		names='Recurso consumido', 
+		names='Recurso consumido',
+		color_discrete_sequence=list(
+			reversed(
+				["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"]
+			)
+		) 
 	)
 	st.plotly_chart(pie)
 
@@ -46,7 +51,8 @@ with st.container(border=True, horizontal_alignment='center'):
 	pie = px.pie(
 		types, 
 		values='Reportes', 
-		names='Tipo de interacción', 
+		names='Tipo de interacción',
+		color_discrete_sequence=["#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969"]
 	)
 	st.plotly_chart(pie)
 

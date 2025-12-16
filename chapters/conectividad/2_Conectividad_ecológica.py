@@ -64,7 +64,6 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Área (ha)', 
 		names='Connectividad', 
 		title='Conectividad de la estructura ecológica principal',
-		#color_discrete_sequence=['LightSalmon', 'DarkRed'],
 		color_discrete_sequence=['#92a311', '#d9c663'],
 	)
 	st.plotly_chart(pie0)
@@ -74,7 +73,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Área (ha)', 
 		names='Connectividad', 
 		title='Conectividad de la estructura ecológica principal + parques urbanos',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie1)
 
@@ -87,7 +86,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Clase de área', 
 		title='Tipo de área de la estructura ecológica principal',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie2)
 
@@ -96,7 +95,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Clase de área', 
 		title='Tipo de área de los parques urbanos',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie3)
 
@@ -105,7 +104,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		values='Porcentaje', 
 		names='Clase de área', 
 		title='Tipo de área de la estructura ecológica principal + parques urbanos',
-		color_discrete_sequence=['LightSalmon', 'DarkRed']
+		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie4)
 
@@ -128,7 +127,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		hover_data={"ECA_Nrm":True},
 		color="ECA_Nrm",
 		labels={"ECA_Nrm": "Nivel de conectividad"},
-		color_continuous_scale="Reds",
+		color_continuous_scale="Speed",
 		opacity=0.7,
 		#marker_line_width=2,  # Thin line for boundaries
 		#marker_line_color='white',  # Boundary color
