@@ -16,4 +16,9 @@ El área correspondiente a ecosistemas transformados, asociados a procesos de in
 Que el 70% de nuestras áreas impactadas tengan el potencial de volver a ser páramo o bosque altoandino no es solo una cifra, es una oportunidad tangible y urgente. La mitad de nuestros ecosistemas originales esperan nuestra acción. Proteger lo que queda y trabajar decididamente para restaurar el potencial natural de estas áreas no es solo una meta ambiental, sino una inversión directa en la calidad del aire, el suministro de agua y la seguridad frente a los riesgos. El momento de actuar es ahora y requiere el compromiso colectivo de cada ciudadano para garantizar la sostenibilidad y el bienestar de las próximas generaciones.
 """
 
+captions = {
+	"fig_1" : "Coberturas vegetales originales.",
+	"fig_2" : "Coberturas vegetales actuales.",
+}
+
 references = "IDEAM. 2024. Mapa de Ecosistemas Continentales, Costeros y Marinos de Colombia (MEC) escala 1:100.000. [Revisada en: 1 nov 2025]. https://experience.arcgis.com/experience/568ddab184334f6b81a04d2fe9aac262/page/Geoportal-Institucional."
