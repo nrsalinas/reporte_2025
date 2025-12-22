@@ -1,5 +1,6 @@
 import os
 import re
+
 from chapters.coberturas import text as cobtext
 from chapters.conectividad import text as context
 from chapters.flora import text as flotext
@@ -61,12 +62,19 @@ for text, fol in zip(text_objs[:1], fig_fols):
 	for d,s,f in os.walk(os.path.join("pdf_version", fol)):
 		for fil in sorted(f):
 			root = re.sub(r"\..+$", "", fil)
-			
 			bff += "\\begin{figure}\n\\centering\n"
-			bff += f"\\includegraphics[height=0.9\\textheight]{{{fol}/{fil}}}\n"
+			
+			if re.search(r'pdf$', fil):
+				bff += f"\\includegraphics[width=0.9\\textwidth]{{{fol}/{fil}}}\n"
+			elif re.search(r'png$', fil):
+				bff += f"\\includegraphics[height=0.9\\textheight]{{{fol}/{fil}}}\n"
+
 			bff += f"\\caption{{{text.captions[root]}}}\n"
 			bff += f"\\label{{{fol}_{root}}}\n"
 			bff += f"\\end{{figure}}\n\n"
+
+	if text.references:
+		pass
 
 bff += "\\end{document}\n\n"
 print(bff)
