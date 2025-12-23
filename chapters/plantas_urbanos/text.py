@@ -10,3 +10,10 @@ En los enclaves secos andinos se evidenció una flora predominantemente nativa, 
 En conjunto, este primer Reporte de Estado de la Diversidad en plantas de los ecosistemas urbanos y periurbanos de Bogotá evidencia la alta riqueza florística de la ciudad y la necesidad de continuar unificando datos y esfuerzos interinstitucionales para cerrar vacíos de información, promover la investigación aplicada y consolidar una gestión urbana más resiliente frente al cambio climático.
 """
 references = ""
+
+captions = {
+	"fig_1" : "Origen geográfico de las plantas de enclaves subxerofíticos",
+	"fig_2" : "Origen geográfico de las plantas de humedales",
+	"fig_3" : "Origen geográfico de las plantas de parques urbanos.",
+	"fig_4" : "Plantas endémicas de Bogotá y su distribución por ecosistema."
+}
