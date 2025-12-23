@@ -8,3 +8,11 @@ De esta manera, la flora bogotana está dominada por plantas propias de dichos e
 Tradicionalmente, los estudiosos de la flora han enfocado sus esfuerzos en la flora de los cerros orientales. Por esta razón, la flora de los cerros es la mejor conocida y muestreada. Este artificio de muestreo también nos permite entender por qué Monserrate y alrededores registran la mayor riqueza de especies en la ciudad. Sin embargo, en años recientes los botánicos han explorado otras zonas de Bogotá con ávido interés, cubriendo zonas tan remotas como el Parque Nacional Natural Sumapaz y las áreas rurales de las localidades Ciudad Bolívar y Usme, de gran importancia ambiental por sus extensos páramos. En este sentido, es necesario continuar con la exploración botánica de la zona rural de la ciudad, que es donde se han encontrado los vacíos de conocimiento más significativos.
 """
 references = ""
+
+captions = {
+	"fig_1" : "Origen de las plantas de Bogotá.",
+	"fig_2" : "Plantas amenazadas de Bogotá y su categoría en la lista roja",
+	"fig_3" : "Familias botánicas más diversas en Bogotá",
+	"fig_4" : "Géneros botánicos más diversos en Bogotá.",
+	"fig_5" : "Mapa de localidades de Bogotá y su riqueza de plantas",
+}
