@@ -7,3 +7,10 @@ Esta estrategia ha permitido el registro de 3303 observaciones de fauna (aves y 
 Esta estrategia fomenta la educación ambiental, el reconocimiento de la biodiversidad urbana y la generación de datos científicos colaborativos que fortalecen la gestión ambiental de la ciudad.
 """
 references = ""
+
+captions = {
+	"fig_1" : "Distribución de los grupos ciudadanos por etapa de formación.",
+	"fig_2" : "Distribución de los registros biológicos por grupo biótico.",
+	 "fig_3" : "Especies con mayor número de registros.",
+	"fig_4" : "Mapa de registros biológicos por localidad.",
+}
