@@ -19,4 +19,5 @@ captions = {
 	"fig_3" : "Tipo de área de la estructura ecológica principal.",
 	"fig_4" : "Tipo de área de los parques urbanos.",
 	"fig_5" : "Tipo de área de las estructura ecológica principal y los parques urbanos.",
+	"fig_6" : "Mapa de conectividad en las áreas verdes de Bogotá.",
 }
