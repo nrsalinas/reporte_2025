@@ -15,5 +15,7 @@ captions = {
 	"fig_1" : "Origen geográfico de las plantas de enclaves subxerofíticos",
 	"fig_2" : "Origen geográfico de las plantas de humedales",
 	"fig_3" : "Origen geográfico de las plantas de parques urbanos.",
-	"fig_4" : "Plantas endémicas de Bogotá y su distribución por ecosistema."
+	"fig_4" : "Plantas endémicas de Colombia presentas en los ecosistemas urbanos de Bogotá.",
+	"fig_5" : "Plantas amenazadas de los ecosistemas urbanos de Bogotá.",
+	"fig_6" : "Distribución de los ecosistemas urbanos en Bogotá",
 }
