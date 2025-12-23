@@ -12,3 +12,11 @@ Los parques urbanos de menor tamaño agregan poca área verde adicional al total
 En conjunto, los resultados muestran que la Estructura Ecológica Principal ofrece una base sólida de hábitat, mientras que los parques urbanos de menor tamaño ayudan a tejer la red de conexiones entre esos núcleos principales. Esto sugiere que, si se diseñan y manejan con criterios ecológicos (tipo de vegetación, función, tamaño y ubicación), estos parques pueden convertirse en aliados estratégicos para conservar la biodiversidad y mejorar la calidad de vida en Bogotá. Por ello, deberían ser considerados de manera explícita en la planificación y en el seguimiento de cómo se conectan las áreas verdes en la ciudad.
 """
 references = ""
+
+captions = {
+	"fig_1" : "Conectividad de la estructura ecológica principal.",
+	"fig_2" : "Conectividad de la estructura ecológica principal y los parques urbanos.",
+	"fig_3" : "Tipo de área de la estructura ecológica principal.",
+	"fig_4" : "Tipo de área de los parques urbanos.",
+	"fig_5" : "Tipo de área de las estructura ecológica principal y los parques urbanos.",
+}
