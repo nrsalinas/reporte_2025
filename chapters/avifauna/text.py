@@ -10,3 +10,7 @@ Actualmente el Jardín Botánico de Bogotá contribuye a un proyecto sombrilla l
 Estos valores reflejan tanto la riqueza de avifauna como la necesidad de fortalecer las acciones de monitoreo y protección de los espacios naturales donde estas aves aún subsisten. Con este reporte queremos resaltar el valor de los ecosistemas presentes en Bogotá, no solo como hábitat de especies emblemáticas y endémicas, sino también como espacios fundamentales para el bienestar humano. Aún tenemos una muy baja representación de la avifauna en enclaves secos, bosque altoandinos, plantaciones forestales, bosques urbanos e, incluso, páramos de la ciudad. Invitamos a la ciudadanía a conocer esta biodiversidad como primer paso para diseñar y fortalecer estrategias de conservación para entender sus requerimientos de conservación y asegurar su permanencia en el tiempo.
 """
 references = ""
+
+captions = {
+	"fig_1" : "Registros de avifauna por localidad de Bogotá."
+}
