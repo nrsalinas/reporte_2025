@@ -27,6 +27,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		res, 
 		values='Reportes', 
 		names='Recurso consumido',
+		title="Recursos asociados a registros de interacciones",
 		color_discrete_sequence=list(
 			reversed(
 				["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"]
@@ -52,6 +53,7 @@ with st.container(border=True, horizontal_alignment='center'):
 		types, 
 		values='Reportes', 
 		names='Tipo de interacción',
+		title="Clases de interacciones registradas",
 		color_discrete_sequence=["#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969"]
 	)
 	st.plotly_chart(pie)

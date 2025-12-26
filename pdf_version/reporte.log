@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.12.26)  26 DEC 2025 12:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2025.12.26)  26 DEC 2025 15:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -117,7 +117,7 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@dimlist=\toks19
 )
 LaTeX Font Info:    Trying to load font information for OT1+bch on input line 1
-4.
+3.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1bch.fd
 File: ot1bch.fd 2004/10/18 font definitions for OT1/bch.
@@ -133,20 +133,20 @@ LaTeX Info: Redefining \% on input line 8.
 )
 \openout1 = `reporte.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -170,8 +170,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -208,24 +208,24 @@ LaTeX Info: Redefining \% on input line 14.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 16.
+(Font)              <12> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 16.
+(Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 16.
+(Font)              <6> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 35.
+(Font)              <7> on input line 34.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 35.
+(Font)              <5> on input line 34.
 <1_coberturas/fig_1.png, id=1, 385.9218pt x 865.7946pt>
 File: 1_coberturas/fig_1.png Graphic file (type png)
 <use 1_coberturas/fig_1.png>
-Package pdftex.def Info: 1_coberturas/fig_1.png  used on input line 46.
+Package pdftex.def Info: 1_coberturas/fig_1.png  used on input line 45.
 (pdftex.def)             Requested size: 231.9494pt x 520.34598pt.
 <1_coberturas/fig_2.png, id=3, 409.2891pt x 921.4425pt>
 File: 1_coberturas/fig_2.png Graphic file (type png)
 <use 1_coberturas/fig_2.png>
-Package pdftex.def Info: 1_coberturas/fig_2.png  used on input line 53.
+Package pdftex.def Info: 1_coberturas/fig_2.png  used on input line 52.
 (pdftex.def)             Requested size: 231.12386pt x 520.34598pt.
 
 
@@ -240,28 +240,33 @@ st/fonts/enc/dvips/base/8r.enc}]
 <2_conectividad/fig_1.pdf, id=20, 527.08919pt x 376.52669pt>
 File: 2_conectividad/fig_1.pdf Graphic file (type pdf)
 <use 2_conectividad/fig_1.pdf>
-Package pdftex.def Info: 2_conectividad/fig_1.pdf  used on input line 86.
+Package pdftex.def Info: 2_conectividad/fig_1.pdf  used on input line 85.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
 <2_conectividad/fig_2.pdf, id=21, 527.08919pt x 376.52669pt>
 File: 2_conectividad/fig_2.pdf Graphic file (type pdf)
 <use 2_conectividad/fig_2.pdf>
-Package pdftex.def Info: 2_conectividad/fig_2.pdf  used on input line 93.
+Package pdftex.def Info: 2_conectividad/fig_2.pdf  used on input line 92.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
 <2_conectividad/fig_3.pdf, id=22, 527.08919pt x 376.52669pt>
 File: 2_conectividad/fig_3.pdf Graphic file (type pdf)
 <use 2_conectividad/fig_3.pdf>
-Package pdftex.def Info: 2_conectividad/fig_3.pdf  used on input line 100.
+Package pdftex.def Info: 2_conectividad/fig_3.pdf  used on input line 99.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
 <2_conectividad/fig_4.pdf, id=23, 527.08919pt x 376.52669pt>
 File: 2_conectividad/fig_4.pdf Graphic file (type pdf)
 <use 2_conectividad/fig_4.pdf>
-Package pdftex.def Info: 2_conectividad/fig_4.pdf  used on input line 107.
+Package pdftex.def Info: 2_conectividad/fig_4.pdf  used on input line 106.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
 <2_conectividad/fig_5.pdf, id=24, 527.08919pt x 376.52669pt>
 File: 2_conectividad/fig_5.pdf Graphic file (type pdf)
 <use 2_conectividad/fig_5.pdf>
-Package pdftex.def Info: 2_conectividad/fig_5.pdf  used on input line 114.
+Package pdftex.def Info: 2_conectividad/fig_5.pdf  used on input line 113.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
+<2_conectividad/fig_6.png, id=25, 567.5604pt x 925.056pt>
+File: 2_conectividad/fig_6.png Graphic file (type png)
+<use 2_conectividad/fig_6.png>
+Package pdftex.def Info: 2_conectividad/fig_6.png  used on input line 120.
+(pdftex.def)             Requested size: 319.26926pt x 520.34598pt.
 
 
 [4
@@ -273,212 +278,214 @@ Package pdftex.def Info: 2_conectividad/fig_5.pdf  used on input line 114.
 [6 <./2_conectividad/fig_3.pdf> <./2_conectividad/fig_4.pdf>]
 
 [7 <./2_conectividad/fig_5.pdf>]
-<3_flora/fig_1.pdf, id=98, 527.08919pt x 376.52669pt>
+
+[8 <./2_conectividad/fig_6.png>]
+<3_flora/fig_1.pdf, id=103, 527.08919pt x 376.52669pt>
 File: 3_flora/fig_1.pdf Graphic file (type pdf)
 <use 3_flora/fig_1.pdf>
-Package pdftex.def Info: 3_flora/fig_1.pdf  used on input line 143.
+Package pdftex.def Info: 3_flora/fig_1.pdf  used on input line 149.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<3_flora/fig_2.pdf, id=99, 527.08919pt x 376.52669pt>
+<3_flora/fig_2.pdf, id=104, 527.08919pt x 376.52669pt>
 File: 3_flora/fig_2.pdf Graphic file (type pdf)
 <use 3_flora/fig_2.pdf>
-Package pdftex.def Info: 3_flora/fig_2.pdf  used on input line 150.
+Package pdftex.def Info: 3_flora/fig_2.pdf  used on input line 156.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<3_flora/fig_3.pdf, id=100, 527.08919pt x 376.52669pt>
+<3_flora/fig_3.pdf, id=105, 527.08919pt x 376.52669pt>
 File: 3_flora/fig_3.pdf Graphic file (type pdf)
 <use 3_flora/fig_3.pdf>
-Package pdftex.def Info: 3_flora/fig_3.pdf  used on input line 157.
+Package pdftex.def Info: 3_flora/fig_3.pdf  used on input line 163.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<3_flora/fig_4.pdf, id=101, 527.08919pt x 376.52669pt>
+<3_flora/fig_4.pdf, id=106, 527.08919pt x 376.52669pt>
 File: 3_flora/fig_4.pdf Graphic file (type pdf)
 <use 3_flora/fig_4.pdf>
-Package pdftex.def Info: 3_flora/fig_4.pdf  used on input line 164.
+Package pdftex.def Info: 3_flora/fig_4.pdf  used on input line 170.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<3_flora/fig_5.png, id=102, 575.9919pt x 921.4425pt>
+<3_flora/fig_5.png, id=107, 575.9919pt x 921.4425pt>
 File: 3_flora/fig_5.png Graphic file (type png)
 <use 3_flora/fig_5.png>
-Package pdftex.def Info: 3_flora/fig_5.png  used on input line 171.
+Package pdftex.def Info: 3_flora/fig_5.png  used on input line 177.
 (pdftex.def)             Requested size: 325.26024pt x 520.34598pt.
 
 
-[8
+[9
 
 ]
 
-[9 <./3_flora/fig_1.pdf> <./3_flora/fig_2.pdf>]
+[10 <./3_flora/fig_1.pdf> <./3_flora/fig_2.pdf>]
 
-[10 <./3_flora/fig_3.pdf> <./3_flora/fig_4.pdf>]
+[11 <./3_flora/fig_3.pdf> <./3_flora/fig_4.pdf>]
 
-[11 <./3_flora/fig_5.png>]
-<4_ecosistemas_urbanos/fig_1.pdf, id=176, 527.08919pt x 376.52669pt>
+[12 <./3_flora/fig_5.png>]
+<4_ecosistemas_urbanos/fig_1.pdf, id=181, 527.08919pt x 376.52669pt>
 File: 4_ecosistemas_urbanos/fig_1.pdf Graphic file (type pdf)
 <use 4_ecosistemas_urbanos/fig_1.pdf>
 Package pdftex.def Info: 4_ecosistemas_urbanos/fig_1.pdf  used on input line 20
-2.
+8.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<4_ecosistemas_urbanos/fig_2.pdf, id=177, 527.08919pt x 376.52669pt>
+<4_ecosistemas_urbanos/fig_2.pdf, id=182, 527.08919pt x 376.52669pt>
 File: 4_ecosistemas_urbanos/fig_2.pdf Graphic file (type pdf)
 <use 4_ecosistemas_urbanos/fig_2.pdf>
-Package pdftex.def Info: 4_ecosistemas_urbanos/fig_2.pdf  used on input line 20
-9.
+Package pdftex.def Info: 4_ecosistemas_urbanos/fig_2.pdf  used on input line 21
+5.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<4_ecosistemas_urbanos/fig_3.pdf, id=178, 527.08919pt x 376.52669pt>
+<4_ecosistemas_urbanos/fig_3.pdf, id=183, 527.08919pt x 376.52669pt>
 File: 4_ecosistemas_urbanos/fig_3.pdf Graphic file (type pdf)
 <use 4_ecosistemas_urbanos/fig_3.pdf>
-Package pdftex.def Info: 4_ecosistemas_urbanos/fig_3.pdf  used on input line 21
-6.
+Package pdftex.def Info: 4_ecosistemas_urbanos/fig_3.pdf  used on input line 22
+2.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<4_ecosistemas_urbanos/fig_4.pdf, id=179, 527.08919pt x 376.52669pt>
+<4_ecosistemas_urbanos/fig_4.pdf, id=184, 527.08919pt x 376.52669pt>
 File: 4_ecosistemas_urbanos/fig_4.pdf Graphic file (type pdf)
 <use 4_ecosistemas_urbanos/fig_4.pdf>
 Package pdftex.def Info: 4_ecosistemas_urbanos/fig_4.pdf  used on input line 22
-3.
+9.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<4_ecosistemas_urbanos/fig_5.pdf, id=180, 527.08919pt x 376.52669pt>
+<4_ecosistemas_urbanos/fig_5.pdf, id=185, 527.08919pt x 376.52669pt>
 File: 4_ecosistemas_urbanos/fig_5.pdf Graphic file (type pdf)
 <use 4_ecosistemas_urbanos/fig_5.pdf>
 Package pdftex.def Info: 4_ecosistemas_urbanos/fig_5.pdf  used on input line 23
-0.
+6.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<4_ecosistemas_urbanos/fig_6.png, id=181, 642.2394pt x 921.4425pt>
+<4_ecosistemas_urbanos/fig_6.png, id=186, 642.2394pt x 921.4425pt>
 File: 4_ecosistemas_urbanos/fig_6.png Graphic file (type png)
 <use 4_ecosistemas_urbanos/fig_6.png>
-Package pdftex.def Info: 4_ecosistemas_urbanos/fig_6.png  used on input line 23
-7.
+Package pdftex.def Info: 4_ecosistemas_urbanos/fig_6.png  used on input line 24
+3.
 (pdftex.def)             Requested size: 362.66994pt x 520.34598pt.
 
 
-[12
+[13
 
 ]
 
-[13 <./4_ecosistemas_urbanos/fig_1.pdf> <./4_ecosistemas_urbanos/fig_2.pdf>]
+[14 <./4_ecosistemas_urbanos/fig_1.pdf> <./4_ecosistemas_urbanos/fig_2.pdf>]
 
-[14 <./4_ecosistemas_urbanos/fig_3.pdf> <./4_ecosistemas_urbanos/fig_4.pdf>]
+[15 <./4_ecosistemas_urbanos/fig_3.pdf> <./4_ecosistemas_urbanos/fig_4.pdf>]
 
-[15 <./4_ecosistemas_urbanos/fig_5.pdf>]
+[16 <./4_ecosistemas_urbanos/fig_5.pdf>]
 
-[16 <./4_ecosistemas_urbanos/fig_6.png>]
+[17 <./4_ecosistemas_urbanos/fig_6.png>]
 LaTeX Font Info:    Trying to load font information for TS1+bch on input line 2
-59.
+65.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1bch.fd
 File: ts1bch.fd 2004/10/18 font definitions for TS1/bch.
 )
-<5_avifauna/fig_1.png, id=262, 588.7596pt x 921.4425pt>
+<5_avifauna/fig_1.png, id=267, 588.7596pt x 921.4425pt>
 File: 5_avifauna/fig_1.png Graphic file (type png)
 <use 5_avifauna/fig_1.png>
-Package pdftex.def Info: 5_avifauna/fig_1.png  used on input line 268.
+Package pdftex.def Info: 5_avifauna/fig_1.png  used on input line 274.
 (pdftex.def)             Requested size: 332.47011pt x 520.34598pt.
 
 
-[17
+[18
 
 ]
 
-[18 <./5_avifauna/fig_1.png>]
-<8_biodiversidad_cp/fig_1.pdf, id=270, 527.08919pt x 376.52669pt>
+[19 <./5_avifauna/fig_1.png>]
+<8_biodiversidad_cp/fig_1.pdf, id=276, 527.08919pt x 376.52669pt>
 File: 8_biodiversidad_cp/fig_1.pdf Graphic file (type pdf)
 <use 8_biodiversidad_cp/fig_1.pdf>
-Package pdftex.def Info: 8_biodiversidad_cp/fig_1.pdf  used on input line 296.
+Package pdftex.def Info: 8_biodiversidad_cp/fig_1.pdf  used on input line 302.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<8_biodiversidad_cp/fig_2.pdf, id=271, 527.08919pt x 376.52669pt>
+<8_biodiversidad_cp/fig_2.pdf, id=277, 527.08919pt x 376.52669pt>
 File: 8_biodiversidad_cp/fig_2.pdf Graphic file (type pdf)
 <use 8_biodiversidad_cp/fig_2.pdf>
-Package pdftex.def Info: 8_biodiversidad_cp/fig_2.pdf  used on input line 303.
+Package pdftex.def Info: 8_biodiversidad_cp/fig_2.pdf  used on input line 309.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<8_biodiversidad_cp/fig_3.pdf, id=272, 527.08919pt x 376.52669pt>
+<8_biodiversidad_cp/fig_3.pdf, id=278, 527.08919pt x 376.52669pt>
 File: 8_biodiversidad_cp/fig_3.pdf Graphic file (type pdf)
 <use 8_biodiversidad_cp/fig_3.pdf>
-Package pdftex.def Info: 8_biodiversidad_cp/fig_3.pdf  used on input line 310.
+Package pdftex.def Info: 8_biodiversidad_cp/fig_3.pdf  used on input line 316.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
 
 
-[19
+[20
 
 ]
 
-[20 <./8_biodiversidad_cp/fig_1.pdf> <./8_biodiversidad_cp/fig_2.pdf>]
+[21 <./8_biodiversidad_cp/fig_1.pdf> <./8_biodiversidad_cp/fig_2.pdf>]
 
-[21 <./8_biodiversidad_cp/fig_3.pdf>]
-<9_interacciones/fig_1.pdf, id=327, 527.08919pt x 376.52669pt>
+[22 <./8_biodiversidad_cp/fig_3.pdf>]
+<9_interacciones/fig_1.pdf, id=332, 527.08919pt x 376.52669pt>
 File: 9_interacciones/fig_1.pdf Graphic file (type pdf)
 <use 9_interacciones/fig_1.pdf>
-Package pdftex.def Info: 9_interacciones/fig_1.pdf  used on input line 353.
+Package pdftex.def Info: 9_interacciones/fig_1.pdf  used on input line 359.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<9_interacciones/fig_2.pdf, id=328, 527.08919pt x 376.52669pt>
+<9_interacciones/fig_2.pdf, id=333, 527.08919pt x 376.52669pt>
 File: 9_interacciones/fig_2.pdf Graphic file (type pdf)
 <use 9_interacciones/fig_2.pdf>
-Package pdftex.def Info: 9_interacciones/fig_2.pdf  used on input line 360.
+Package pdftex.def Info: 9_interacciones/fig_2.pdf  used on input line 366.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<9_interacciones/fig_3.pdf, id=329, 527.08919pt x 376.52669pt>
+<9_interacciones/fig_3.pdf, id=334, 527.08919pt x 376.52669pt>
 File: 9_interacciones/fig_3.pdf Graphic file (type pdf)
 <use 9_interacciones/fig_3.pdf>
-Package pdftex.def Info: 9_interacciones/fig_3.pdf  used on input line 367.
+Package pdftex.def Info: 9_interacciones/fig_3.pdf  used on input line 373.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<9_interacciones/fig_4.pdf, id=330, 527.08919pt x 376.52669pt>
+<9_interacciones/fig_4.pdf, id=335, 527.08919pt x 376.52669pt>
 File: 9_interacciones/fig_4.pdf Graphic file (type pdf)
 <use 9_interacciones/fig_4.pdf>
-Package pdftex.def Info: 9_interacciones/fig_4.pdf  used on input line 374.
+Package pdftex.def Info: 9_interacciones/fig_4.pdf  used on input line 380.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<9_interacciones/fig_5.png, id=331, 569.4876pt x 921.4425pt>
+<9_interacciones/fig_5.png, id=336, 569.4876pt x 921.4425pt>
 File: 9_interacciones/fig_5.png Graphic file (type png)
 <use 9_interacciones/fig_5.png>
-Package pdftex.def Info: 9_interacciones/fig_5.png  used on input line 381.
+Package pdftex.def Info: 9_interacciones/fig_5.png  used on input line 387.
 (pdftex.def)             Requested size: 321.5873pt x 520.34598pt.
 
 
-[22
+[23
 
 ]
 
-[23 <./9_interacciones/fig_1.pdf> <./9_interacciones/fig_2.pdf>]
+[24 <./9_interacciones/fig_1.pdf> <./9_interacciones/fig_2.pdf>]
 
-[24 <./9_interacciones/fig_3.pdf> <./9_interacciones/fig_4.pdf>]
+[25 <./9_interacciones/fig_3.pdf> <./9_interacciones/fig_4.pdf>]
 
-[25 <./9_interacciones/fig_5.png>]
-<10_interacciones_cp/fig_1.pdf, id=387, 527.08919pt x 376.52669pt>
+[26 <./9_interacciones/fig_5.png>]
+<10_interacciones_cp/fig_1.pdf, id=392, 527.08919pt x 376.52669pt>
 File: 10_interacciones_cp/fig_1.pdf Graphic file (type pdf)
 <use 10_interacciones_cp/fig_1.pdf>
-Package pdftex.def Info: 10_interacciones_cp/fig_1.pdf  used on input line 406.
+Package pdftex.def Info: 10_interacciones_cp/fig_1.pdf  used on input line 412.
 
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<10_interacciones_cp/fig_2.pdf, id=388, 527.08919pt x 376.52669pt>
+<10_interacciones_cp/fig_2.pdf, id=393, 527.08919pt x 376.52669pt>
 File: 10_interacciones_cp/fig_2.pdf Graphic file (type pdf)
 <use 10_interacciones_cp/fig_2.pdf>
-Package pdftex.def Info: 10_interacciones_cp/fig_2.pdf  used on input line 413.
+Package pdftex.def Info: 10_interacciones_cp/fig_2.pdf  used on input line 419.
 
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
 
 
-[26
+[27
 
 ]
 
-[27 <./10_interacciones_cp/fig_1.pdf> <./10_interacciones_cp/fig_2.pdf>]
-<11_suelos/fig_1.pdf, id=430, 527.08919pt x 376.52669pt>
+[28 <./10_interacciones_cp/fig_1.pdf> <./10_interacciones_cp/fig_2.pdf>]
+<11_suelos/fig_1.pdf, id=435, 527.08919pt x 376.52669pt>
 File: 11_suelos/fig_1.pdf Graphic file (type pdf)
 <use 11_suelos/fig_1.pdf>
-Package pdftex.def Info: 11_suelos/fig_1.pdf  used on input line 438.
+Package pdftex.def Info: 11_suelos/fig_1.pdf  used on input line 444.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<11_suelos/fig_2.pdf, id=431, 527.08919pt x 376.52669pt>
+<11_suelos/fig_2.pdf, id=436, 527.08919pt x 376.52669pt>
 File: 11_suelos/fig_2.pdf Graphic file (type pdf)
 <use 11_suelos/fig_2.pdf>
-Package pdftex.def Info: 11_suelos/fig_2.pdf  used on input line 445.
+Package pdftex.def Info: 11_suelos/fig_2.pdf  used on input line 451.
 (pdftex.def)             Requested size: 328.82707pt x 234.90918pt.
-<11_suelos/fig_3.png, id=432, 642.2394pt x 921.4425pt>
+<11_suelos/fig_3.png, id=437, 642.2394pt x 921.4425pt>
 File: 11_suelos/fig_3.png Graphic file (type png)
 <use 11_suelos/fig_3.png>
-Package pdftex.def Info: 11_suelos/fig_3.png  used on input line 452.
+Package pdftex.def Info: 11_suelos/fig_3.png  used on input line 458.
 (pdftex.def)             Requested size: 362.66994pt x 520.34598pt.
 
 
-[28
+[29
 
 ]
 
-[29 <./11_suelos/fig_1.pdf> <./11_suelos/fig_2.pdf>]
+[30 <./11_suelos/fig_1.pdf> <./11_suelos/fig_2.pdf>]
 
-[30 <./11_suelos/fig_3.png>] (./reporte.aux
+[31 <./11_suelos/fig_3.png>] (./reporte.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -486,22 +493,26 @@ LaTeX Info: Redefining \% on input line 8.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 3737 strings out of 475075
- 65349 string characters out of 5763585
+ 3745 strings out of 475075
+ 65587 string characters out of 5763585
  468878 words of memory out of 5000000
- 26734 multiletter control sequences out of 15000+600000
+ 26742 multiletter control sequences out of 15000+600000
  575767 words of font info for 62 fonts, out of 8000000 for 9000
  62 hyphenation exceptions out of 8191
  57i,12n,65p,2943b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb>
-Output written on reporte.pdf (30 pages, 3062189 bytes).
+Output written on reporte.pdf (31 pages, 3570745 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
+ 501 PDF objects out of 1000 (max. 8388607)
+ 315 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

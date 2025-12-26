@@ -107,6 +107,9 @@ with st.container(border=True, horizontal_alignment='center'):
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown("**Sitios de trabajo del programa de ciencia participativa**\n\nLos sitios de trabajo del programa de ciencia participativa durante el año 2025 fueron Santa Bárbaba, Navarra y Molinos IED Nuevo Horizonte (Usaquén), Bosque Urbano del Parkway (Teusaquillo), Bosque Urbano de Ciudad Montes (Puente Aranda) y Corredor La Magdalena (Kennedy).")
+
+
 	fig = px.choropleth_map(
 		loc,
 		title='Localidades de trabajo',
@@ -151,7 +154,6 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 
 	st.plotly_chart(fig, use_container_width=True)
-
 
 st.markdown("""#""")
 
