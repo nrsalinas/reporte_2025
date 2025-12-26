@@ -4,3 +4,7 @@ main = """
 La estrategia Ciencia Participativa e Interacciones Bióticas integra observaciones ciudadanas para caracterizar las relaciones entre organismos que hacen parte de los ecosistemas de Bogotá. A partir de 377 reportes ciudadanos se documentaron diversos tipos de interacción, de los cuales el 72% corresponde a relaciones de consumo, el 16% a crecimiento sobre otras especies y un 9% a interacciones generales, mientras que anidación, parasitismo y simbiosis representaron proporciones menores. El análisis de los recursos consumidos muestra una dominancia del uso de flores (63,8%), seguida por tallos (11%), néctar (9,4%), frutos (7,1%), hojas y semillas (2,8% cada una), y polen (1,4%). Estas interacciones evidencian patrones tanto mutualistas como antagonistas, como *Thygare aethlops* en *Salvia bogotensis*, *Spinus psaltria* en *Streptosolen jamesonii* y *Danaus plexippus* en *Lantana camara*. La información recolectada permite identificar redes tróficas y asociaciones ecológicas relevantes para la gestión de la biodiversidad urbana, aportando a la comprensión de las dinámicas de las especies y la adaptación al desarrollo de la ciudad. El enfoque participativo fortalece la capacidad de observación comunitaria y genera datos verificables para análisis y seguimiento de dinámicas biológicas en el Distrito Capital.
 """
 references = ""
+captions = {
+	"fig_1" : "Recursos bióticos asociados a registros de interacciones.",
+	"fig_2" : "Clases de interacciones registradas.",
+}
