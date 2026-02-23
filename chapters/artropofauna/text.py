@@ -18,5 +18,5 @@ Salazar-Fillippo, A. A., Tulande-M. E. & Ladislav. M. 2024. Update of the nation
 """
 
 captions = {
-	#"fig_1" : "Origen de las plantas de Bogotá.",
+	"fig_1" : "Diversidad de artrópodos en las localidades de Bogotá.",
 }

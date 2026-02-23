@@ -6,7 +6,7 @@ from chapters.conectividad import text as context
 from chapters.flora import text as flotext
 from chapters.plantas_urbanos import text as platext
 from chapters.avifauna import text as avitext
-#from chapters.artropofauna import text as arttext
+from chapters.artropofauna import text as arttext
 from chapters.ciencia_participativa_biodiversidad import text as bcptext
 from chapters.interacciones import text as inttext
 from chapters.ciencia_participativa_interacciones import text as icptext
@@ -28,7 +28,7 @@ def txt2tex(instr):
 
 text_objs = [
 	cobtext, context, flotext, platext, avitext,
-	#arttext,
+	arttext,
 	bcptext, inttext, icptext,suetext
 ]
 
@@ -38,7 +38,7 @@ fig_fols=[
 	'3_flora', 
 	'4_ecosistemas_urbanos',
 	'5_avifauna', 
-#	'6_artropofauna', 
+	'6_artropofauna', 
 	'8_biodiversidad_cp', 
 	'9_interacciones', 
 	'10_interacciones_cp', 
