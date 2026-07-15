@@ -69,6 +69,7 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 	st.plotly_chart(pie0)
 
+	st.markdown('### Conectividad de la estructura ecológica principal + parques urbanos')
 	pie1= px.pie(
 		co_eep_parks_pd, 
 		values='Área (ha)', 
