@@ -23,11 +23,12 @@ st.markdown(md)
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown("**Recursos asociados a registros de interacciones**")
 	pie = px.pie(
 		res, 
 		values='Reportes', 
 		names='Recurso consumido',
-		title="Recursos asociados a registros de interacciones",
+		#title="Recursos asociados a registros de interacciones",
 		color_discrete_sequence=list(
 			reversed(
 				["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"]
@@ -49,11 +50,12 @@ with st.container(border=True, horizontal_alignment='center'):
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown("**Clases de interacciones registradas**")
 	pie = px.pie(
 		types, 
 		values='Reportes', 
 		names='Tipo de interacción',
-		title="Clases de interacciones registradas",
+		#title="Clases de interacciones registradas",
 		color_discrete_sequence=["#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969"]
 	)
 	st.plotly_chart(pie)
