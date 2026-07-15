@@ -48,30 +48,33 @@ st.markdown(md)
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Origen geográfico de las plantas de enclaves subxerofíticos**')
 	pie0 = px.pie(
 		encl_ori, 
 		values='Porcentaje', 
 		names='Origen', 
-		title='Origen geográfico de las plantas de enclaves subxerofíticos',
+		#title='Origen geográfico de las plantas de enclaves subxerofíticos',
 		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie0)
 
+	st.markdown('**Origen geográfico de las plantas de humedales**')
 	pie1 = px.pie(
 		hum_ori, 
 		values='Porcentaje', 
 		names='Origen', 
-		title='Origen geográfico de las plantas de humedales',
+		#title='Origen geográfico de las plantas de humedales',
 		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	#pie1 = pie1.update_layout(showlegend=False)
 	st.plotly_chart(pie1)
 
+	st.markdown('**Origen geográfico de las plantas de parques urbanos**')
 	pie2 = px.pie(
 		parq_ori, 
 		values='Porcentaje', 
 		names='Origen', 
-		title='Origen geográfico de las plantas de parques urbanos',
+		#title='Origen geográfico de las plantas de parques urbanos',
 		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	#pie2 = pie2.update_layout(showlegend=False)
@@ -85,11 +88,12 @@ with st.container(border=True, horizontal_alignment='center'):
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Endemismo**')
 	pie3 = px.pie(
 		end, 
 		values='Porcentaje', 
 		names='Ecosistema', 
-		title='Endemismo',
+		#title='Endemismo',
 		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
 	#pie3 = pie3.update_layout(showlegend=False)
@@ -102,12 +106,13 @@ with st.container(border=True, horizontal_alignment='center'):
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Plantas amenazadas**')
 	myyy = [i for i in iucn_pd.columns if i != 'Ecosistema']
 	bar0 = px.bar(
 		iucn_pd, 
 		x='Ecosistema', 
 		y = myyy,
-		title='Plantas amenazadas',
+		#title='Plantas amenazadas',
 		color_discrete_sequence=["#18351f", "#1f7425", "#809d0b", "#b1af2c", "#f3e9ab"]
 	)
 	bar0 = bar0.update_layout(height=500)
