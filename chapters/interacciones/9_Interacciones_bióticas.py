@@ -35,56 +35,56 @@ st.markdown(md)
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Interacciones de plantas no nativas**')
 	bar1 = px.bar(
 		inter_no_nat_df, 
 		y="Interacción", 
 		x="Registros",
 		color="Potencial invasor",
-		title='Interacciones de plantas no nativas',
+		#title='Interacciones de plantas no nativas',
 		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
-
 	#bar1 = bar1.update_layout(height=500)
 	st.plotly_chart(bar1)
 
+	st.markdown('**Interacciones de plantas nativas**')
 	bar0 = px.bar(
 		inter_all_df, 
 		y="Interacción", 
 		x="Registros",
 		color="Potencial invasor",
-		title='Interacciones de plantas nativas',
+		#title='Interacciones de plantas nativas',
 		color_discrete_sequence=['#36811c','#859f0c','#e0cd72']
 	)
-
 	#bar0 = bar0.update_layout(height=500)
 	st.plotly_chart(bar0)
 
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Especies no nativas con mayor número de registros**')
 	bar3 = px.bar(
 		spp_no_nat_df, 
 		y="Especie", 
 		x="Registros",
 		color="Interacción",
-		title='Especies no nativas con mayor número de registros',
+		#title='Especies no nativas con mayor número de registros',
 		#color_discrete_sequence=['Bisque', 'DarkRed', 'Coral'],
 		color_discrete_sequence=["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"],
 	)
-
 	#bar3 = bar3.update_layout(height=500)
 	st.plotly_chart(bar3)
 
+	st.markdown('**Especies nativas con mayor número de registros**')
 	bar2 = px.bar(
 		spp_nat_df, 
 		y="Especie", 
 		x="Registros",
 		color="Interacción",
-		title='Especies nativas con mayor número de registros',
+		#title='Especies nativas con mayor número de registros',
 		#color_discrete_sequence=['Bisque', 'DarkRed', 'Coral'],
 		color_discrete_sequence=["#18351f", "#10572b", "#1f7425", "#4e8b14", "#809d0b", "#b1af2c", "#dbc969", "#f3e9ab"],
 	)
-
 	#bar2 = bar2.update_layout(height=500)
 	st.plotly_chart(bar2)
 
