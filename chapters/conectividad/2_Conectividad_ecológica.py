@@ -59,11 +59,12 @@ st.markdown(md)
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Conectividad de la estructura ecológica principal**')
 	pie0 = px.pie(
 		co_eep_pd, 
 		values='Área (ha)', 
 		names='Connectividad', 
-		title='Conectividad de la estructura ecológica principal',
+		#title='Conectividad de la estructura ecológica principal',
 		color_discrete_sequence=['#92a311', '#d9c663'],
 	)
 	st.plotly_chart(pie0)
