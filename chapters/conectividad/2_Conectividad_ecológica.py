@@ -69,7 +69,7 @@ with st.container(border=True, horizontal_alignment='center'):
 	)
 	st.plotly_chart(pie0)
 
-	st.markdown('#### Conectividad de la estructura ecológica principal + parques urbanos')
+	st.markdown('**Conectividad de la estructura ecológica principal + parques urbanos**')
 	pie1= px.pie(
 		co_eep_parks_pd, 
 		values='Área (ha)', 
@@ -83,29 +83,32 @@ with st.container(border=True, horizontal_alignment='center'):
 
 with st.container(border=True, horizontal_alignment='center'):
 
+	st.markdown('**Tipo de área de la estructura ecológica principal**')
 	pie2 = px.pie(
 		fl_eep_pd, 
 		values='Porcentaje', 
 		names='Clase de área', 
-		title='Tipo de área de la estructura ecológica principal',
+		#title='Tipo de área de la estructura ecológica principal',
 		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie2)
 
+	st.markdown('**Tipo de área de los parques urbanos**')
 	pie3 = px.pie(
 		fl_parks_pd, 
 		values='Porcentaje', 
 		names='Clase de área', 
-		title='Tipo de área de los parques urbanos',
+		#title='Tipo de área de los parques urbanos',
 		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie3)
 
+	st.markdown('**Tipo de área de la estructura ecológica principal + parques urbanos**')
 	pie4 = px.pie(
 		fl_eep_parks_pd, 
 		values='Porcentaje', 
 		names='Clase de área', 
-		title='Tipo de área de la estructura ecológica principal + parques urbanos',
+		#title='Tipo de área de la estructura ecológica principal + parques urbanos',
 		color_discrete_sequence=['#92a311', '#d9c663']
 	)
 	st.plotly_chart(pie4)
