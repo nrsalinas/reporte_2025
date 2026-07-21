@@ -1,0 +1,16 @@
+services:
+  reporte_2025:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: reporte-2025-biodiversidad:latest
+    container_name: reporte_2025
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 5s
+      start_period: 15s
+      retries: 3
