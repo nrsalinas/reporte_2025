@@ -2,3 +2,11 @@
 base = "light"
 secondaryBackgroundColor = "DarkGreen"
 font = "Mulish:https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+
+[server]
+headless = true
+port = 8501
+address = "0.0.0.0"
+baseUrlPath = "reportebio2025"
+enableCORS = false
+enableXsrfProtection = false
