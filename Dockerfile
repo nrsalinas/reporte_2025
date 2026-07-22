@@ -30,4 +30,5 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
 ENTRYPOINT ["streamlit", "run", "streamlit_app.py", \
     "--server.port=8501", \
     "--server.address=0.0.0.0", \
-    "--server.headless=true"]
+    "--server.headless=true", \
+    "--server.baseUrlPath=reportebio2025"]
