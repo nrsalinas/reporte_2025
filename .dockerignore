@@ -1,0 +1,18 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+.DS_Store
+
+# No se necesitan en runtime dentro del contenedor
+pdf_version/
+dev.ipynb
+fig4pdf.ipynb
+build_tex.py
+
+# Artefactos locales de Docker/IDE
+Dockerfile
+.dockerignore
+docker-compose.yml
+.venv/
+.vscode/
